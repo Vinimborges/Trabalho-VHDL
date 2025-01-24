@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Trabalho
-Thu Jan 23 23:39:20 2025
+Fri Jan 24 15:33:42 2025
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -10,13 +10,7 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -43,20 +37,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jan 23 23:39:20 2025       ;
+; Analysis & Synthesis Status        ; Failed - Fri Jan 24 15:33:42 2025           ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Trabalho                                    ;
 ; Top-level Entity Name              ; Controle                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 11                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -151,8 +145,8 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -162,149 +156,45 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                            ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                     ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
-; Controle.vhd                     ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Controle.vhd ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------+---------+
-
-
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-;                                             ;            ;
-; Total combinational functions               ; 0          ;
-; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 0          ;
-;     -- 3 input functions                    ; 0          ;
-;     -- <=2 input functions                  ; 0          ;
-;                                             ;            ;
-; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 0          ;
-;     -- arithmetic mode                      ; 0          ;
-;                                             ;            ;
-; Total registers                             ; 0          ;
-;     -- Dedicated logic registers            ; 0          ;
-;     -- I/O registers                        ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 11         ;
-;                                             ;            ;
-; Embedded Multiplier 9-bit elements          ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; clk_1Hz_in ;
-; Maximum fan-out                             ; 1          ;
-; Total fan-out                               ; 14         ;
-; Average fan-out                             ; 0.64       ;
-+---------------------------------------------+------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |Controle                  ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |Controle           ; Controle    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 11                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
-;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Jan 23 23:39:13 2025
+    Info: Processing started: Fri Jan 24 15:33:23 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Trabalho -c Trabalho
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file trabalho.vhd
-    Info (12022): Found design unit 1: Trabalho-behavioral File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Trabalho.vhd Line: 11
-    Info (12023): Found entity 1: Trabalho File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Trabalho.vhd Line: 4
+    Info (12022): Found design unit 1: Trabalho-behavioral File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 11
+    Info (12023): Found entity 1: Trabalho File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decoder.vhd
-    Info (12022): Found design unit 1: Decoder-behavioral File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Decoder.vhd Line: 10
-    Info (12023): Found entity 1: Decoder File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Decoder.vhd Line: 3
+    Info (12022): Found design unit 1: Decoder-behavioral File: C:/intelFPGA_lite/17.0/Trabalho/Decoder.vhd Line: 10
+    Info (12023): Found entity 1: Decoder File: C:/intelFPGA_lite/17.0/Trabalho/Decoder.vhd Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file mem.vhd
-    Info (12022): Found design unit 1: MEM-behavioral File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/MEM.vhd Line: 14
-    Info (12023): Found entity 1: MEM File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/MEM.vhd Line: 5
+    Info (12022): Found design unit 1: MEM-behavioral File: C:/intelFPGA_lite/17.0/Trabalho/MEM.vhd Line: 14
+    Info (12023): Found entity 1: MEM File: C:/intelFPGA_lite/17.0/Trabalho/MEM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
-    Info (12022): Found design unit 1: PC-behavioral File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/PC.vhd Line: 14
-    Info (12023): Found entity 1: PC File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/PC.vhd Line: 5
+    Info (12022): Found design unit 1: PC-behavioral File: C:/intelFPGA_lite/17.0/Trabalho/PC.vhd Line: 14
+    Info (12023): Found entity 1: PC File: C:/intelFPGA_lite/17.0/Trabalho/PC.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file clk_div.vhd
-    Info (12022): Found design unit 1: CLK_div-comportamento File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/CLK_div.vhd Line: 12
-    Info (12023): Found entity 1: CLK_div File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/CLK_div.vhd Line: 4
+    Info (12022): Found design unit 1: CLK_div-comportamento File: C:/intelFPGA_lite/17.0/Trabalho/CLK_div.vhd Line: 12
+    Info (12023): Found entity 1: CLK_div File: C:/intelFPGA_lite/17.0/Trabalho/CLK_div.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file reg.vhd
-    Info (12022): Found design unit 1: REG-behavioral File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/REG.vhd Line: 11
-    Info (12023): Found entity 1: REG File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/REG.vhd Line: 4
+    Info (12022): Found design unit 1: REG-behavioral File: C:/intelFPGA_lite/17.0/Trabalho/REG.vhd Line: 11
+    Info (12023): Found entity 1: REG File: C:/intelFPGA_lite/17.0/Trabalho/REG.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file controle.vhd
-    Info (12022): Found design unit 1: Controle-comportamento File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Controle.vhd Line: 13
-    Info (12023): Found entity 1: Controle File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Controle.vhd Line: 4
-Info (12127): Elaborating entity "Controle" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at Controle.vhd(8): used implicit default value for signal "ATT_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Controle.vhd Line: 8
-Warning (10541): VHDL Signal Declaration warning at Controle.vhd(8): used implicit default value for signal "ZERA_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Controle.vhd Line: 8
-Warning (10541): VHDL Signal Declaration warning at Controle.vhd(8): used implicit default value for signal "LER_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Controle.vhd Line: 8
-Warning (10541): VHDL Signal Declaration warning at Controle.vhd(8): used implicit default value for signal "CARREGA_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Controle.vhd Line: 8
-Warning (10492): VHDL Process Statement warning at Controle.vhd(22): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Controle.vhd Line: 22
-Warning (10492): VHDL Process Statement warning at Controle.vhd(26): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Controle.vhd Line: 26
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "ATT_out" is stuck at GND File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Controle.vhd Line: 8
-    Warning (13410): Pin "ZERA_out" is stuck at GND File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Controle.vhd Line: 8
-    Warning (13410): Pin "LER_out" is stuck at GND File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Controle.vhd Line: 8
-    Warning (13410): Pin "CARREGA_out" is stuck at GND File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Controle.vhd Line: 8
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk_1Hz_in" File: C:/intelFPGA_lite/17.0/Vinicius-21_01_2025/Trabalho/Controle.vhd Line: 6
-Info (21057): Implemented 11 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 7 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4782 megabytes
-    Info: Processing ended: Thu Jan 23 23:39:20 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:13
+    Info (12022): Found design unit 1: Controle-comportamento File: C:/intelFPGA_lite/17.0/Trabalho/Controle.vhd Line: 13
+    Info (12023): Found entity 1: Controle File: C:/intelFPGA_lite/17.0/Trabalho/Controle.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
+    Info (12022): Found design unit 1: ULA-comportamento File: C:/intelFPGA_lite/17.0/Trabalho/ULA.vhd Line: 12
+    Info (12023): Found entity 1: ULA File: C:/intelFPGA_lite/17.0/Trabalho/ULA.vhd Line: 4
+Error (10482): VHDL error at ULA.vhd(21): object "unsigned" is used but not declared File: C:/intelFPGA_lite/17.0/Trabalho/ULA.vhd Line: 21
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
+    Error: Peak virtual memory: 4775 megabytes
+    Error: Processing ended: Fri Jan 24 15:33:42 2025
+    Error: Elapsed time: 00:00:19
+    Error: Total CPU time (on all processors): 00:00:43
 
 

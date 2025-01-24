@@ -3,10 +3,9 @@ use ieee.std_logic_1164.all;
 
 entity ULA is 
     port (
-        X, Y : in std_logic_vector(3 downto 0);
-        OPcode : in std_logic_vector(7 downto 0);
-        resultado : out std_logic_vector(3 downto 0);
-        sinal_halt : out std_logic
+        X, Y : in std_logic_vector(7 downto 0);
+        OPcode : in std_logic_vector(2 downto 0);
+        resultado : out std_logic_vector(7 downto 0)
     );
 end ULA;
 
@@ -25,7 +24,7 @@ begin
         when "011" => -- Operação X or Y
             resultado <= X or Y;
         when "100" => -- Operação Not X
-            resultado < not X;
+            resultado <= not X;
         when "101" => -- Operação Y
             resultado <= Y;
         when "110" => -- Operação HALT (stop)

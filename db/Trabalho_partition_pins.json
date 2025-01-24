@@ -108,6 +108,38 @@
 					"strict" : false
 				},
 				{
+					"name" : "valor_X[0]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_X[1]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_X[2]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_X[3]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_X[4]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_X[5]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_X[6]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_X[7]",
+					"strict" : false
+				},
+				{
 					"name" : "reset",
 					"strict" : false
 				},

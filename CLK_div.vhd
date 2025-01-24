@@ -19,7 +19,8 @@ architecture comportamento of CLK_div is
      process(clock_50Mhz)
     begin
         if rising_edge(clock_50Mhz) then -- Verifica a borda de subida do clock de 50 MHz.
-            if contador = 50e6 then -- Se o contador atingir 50e6 (alcançando o ciclo desejado).
+            --if contador = 50e6 then -- Se o contador atingir 50e6 (alcançando o ciclo desejado).
+				if contador = 1 then -- Se o contador atingir 50e6 (alcançando o ciclo desejado).
                     contador <= 0; -- Reseta o contador.
                     led_status <= not led_status; -- Alterna o estado do LED (liga/desliga).
                 else -- Caso contrário.

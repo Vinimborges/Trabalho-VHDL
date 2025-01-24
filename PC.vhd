@@ -19,8 +19,13 @@ begin
 	 process(clk_1Hz_in, ATT_in)
     begin
         if rising_edge(clk_1Hz_in) then -- A cada borda de subida atualiza o valor da instrucao lida
-            if ATT_in = '1' then        -- Apenas lê a memória se o sinal ATT estiver ativo
-                sinal_PC <= std_logic_vector(unsigned(sinal_PC) + 1);
+				if ZERA_in = '1' then
+					sinal_PC <= (others => '0'); 
+					
+            else 
+					if ATT_in = '1' then        -- Apenas lê a memória se o sinal ATT estiver ativo
+						sinal_PC <= std_logic_vector(unsigned(sinal_PC) + 1);
+					end if;
             end if;
         end if;
 		  PC_out <= sinal_PC;

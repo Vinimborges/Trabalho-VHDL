@@ -18,9 +18,34 @@ begin
     ----------------- Síncrono -----------------
     sincrono : process(clk_1Hz_in)
     begin
+		  CARREGA_out <= '0';
+		  ZERA_out    <= '0';
+		  LER_out     <= '0';
+        ATT_out     <= '1';
 		  
-        if OPCODE_in = "000" then
+		  if OPCODE_in = "000" then 
+				LER_out     <= '1';
 				
+        elsif OPCODE_in = "001" then    --Add X + Y
+				CARREGA_out <= '1';
+				LER_out     <= '1';
+				
+        elsif OPCODE_in = "010" then
+				LER_out <= '1';
+
+        elsif OPCODE_in = "011" then
+				LER_out <= '1';
+
+        elsif OPCODE_in = "100" then
+				LER_out <= '1';
+
+        elsif OPCODE_in = "101" then
+				LER_out  <= '1';
+
+        elsif OPCODE_in = "110" then   -- HALT
+				LER_out  <= '0';
+				ZERA_out <= '1';
+				--ATT_out  <= '0';
         end if;
 		  
 		  OPCODE_out <= OPCODE_in;

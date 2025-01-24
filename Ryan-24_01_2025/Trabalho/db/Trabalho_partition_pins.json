@@ -1,0 +1,121 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "valor_PC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_PC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_PC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_PC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Memoria[0]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Memoria[1]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Memoria[2]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Memoria[3]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Memoria[4]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Memoria[5]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Memoria[6]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Memoria[7]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Memoria[8]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Memoria[9]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Memoria[10]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_OPCODE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_OPCODE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_OPCODE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Y[0]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Y[1]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Y[2]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Y[3]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Y[4]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Y[5]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Y[6]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_Y[7]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

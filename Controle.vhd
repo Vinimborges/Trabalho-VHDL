@@ -30,19 +30,24 @@ begin
 				CARREGA_out <= '1';
 				LER_out     <= '1';
 				
-        elsif OPCODE_in = "010" then
+        elsif OPCODE_in = "010" then    --X AND Y
+				CARREGA_out <= '1';
 				LER_out <= '1';
 
-        elsif OPCODE_in = "011" then
+        elsif OPCODE_in = "011" then    --X OR Y
+				CARREGA_out <= '1';
 				LER_out <= '1';
 
-        elsif OPCODE_in = "100" then
+		  elsif OPCODE_in = "100" then	--NOT X
+				CARREGA_out <= '1';
 				LER_out <= '1';
 
-        elsif OPCODE_in = "101" then
+        elsif OPCODE_in = "101" then	--Y
+				CARREGA_out <= '1';
 				LER_out  <= '1';
 
         elsif OPCODE_in = "110" then   -- HALT
+				CARREGA_out <= '0';
 				LER_out  <= '0';
 				ZERA_out <= '1';
 				--ATT_out  <= '0';

@@ -94,28 +94,75 @@ R23
 !i113 1
 R15
 R16
-Etrabalho
-Z24 w1737749261
-R3
-R7
+Ehard_block
+Z24 w1737754391
 R2
-Z25 DPx6 altera 11 dffeas_pack 0 22 >EJOc2K4@P4f?njWHdOcd0
+R3
 R4
 R5
 R6
-Z26 DPx6 altera 28 altera_primitives_components 0 22 14j`ZKHCzSI;]V?hmAE6_1
-R0
+R7
+Z25 dC:/intelFPGA_lite/17.0/Trabalho/simulation/qsim
 R8
 R9
 l0
-L37
-V_2fj2l^8m2jLKP;>]MHQk1
-!s100 So_R6aD6^E4DH^9jX:^jG3
+L35
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
 R10
 32
-Z27 !s110 1737749261
+Z26 !s110 1737754392
 !i10b 1
-Z28 !s108 1737749261.000000
+Z27 !s108 1737754392.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+l65
+L51
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R10
+32
+R26
+!i10b 1
+R27
+R13
+R14
+!i113 1
+R15
+R16
+Etrabalho
+R24
+R3
+R7
+R2
+Z28 DPx6 altera 11 dffeas_pack 0 22 >EJOc2K4@P4f?njWHdOcd0
+R4
+R5
+R6
+Z29 DPx6 altera 28 altera_primitives_components 0 22 14j`ZKHCzSI;]V?hmAE6_1
+R25
+R8
+R9
+l0
+L80
+V:_;^OJzkORh>Vk1j7mQ>Y3
+!s100 G30@4lYBG_nieZfX0hD8V3
+R10
+32
+R26
+!i10b 1
+R27
 R13
 R14
 !i113 1
@@ -125,62 +172,62 @@ Astructure
 R3
 R7
 R2
-R25
+R28
 R4
 R5
 R6
-R26
-DEx4 work 8 trabalho 0 22 _2fj2l^8m2jLKP;>]MHQk1
-l200
-L50
-VbQP57hNHT1YFkJB1Q17l>2
-!s100 Hn^PkzDX[<fnM3UXIUajb3
+R29
+DEx4 work 8 trabalho 0 22 :_;^OJzkORh>Vk1j7mQ>Y3
+l350
+L140
+V[_[B[fUaIjcS7?f>;^7D]0
+!s100 X8V=AE]kVc00kTQCLGl7c3
 R10
 32
-R27
+R26
 !i10b 1
-R28
+R27
 R13
 R14
 !i113 1
 R15
 R16
 Etrabalho_vhd_vec_tst
-Z29 w1737749260
+Z30 w1737754389
 R5
 R6
-R0
-Z30 8Waveform17.vwf.vht
-Z31 FWaveform17.vwf.vht
+R25
+Z31 8Waveform20.vwf.vht
+Z32 FWaveform20.vwf.vht
 l0
 L32
 VHIDQSaFCO]Z=o5i<DbDfV3
 !s100 5NNdUFazGj5NUCIFJz[eF1
 R10
 32
-R27
+Z33 !s110 1737754393
 !i10b 1
-R28
-Z32 !s90 -work|work|Waveform17.vwf.vht|
-Z33 !s107 Waveform17.vwf.vht|
+Z34 !s108 1737754393.000000
+Z35 !s90 -work|work|Waveform20.vwf.vht|
+Z36 !s107 Waveform20.vwf.vht|
 !i113 1
 R15
 R16
 Atrabalho_arch
 R5
 R6
-Z34 DEx4 work 20 trabalho_vhd_vec_tst 0 22 HIDQSaFCO]Z=o5i<DbDfV3
-l57
+Z37 DEx4 work 20 trabalho_vhd_vec_tst 0 22 HIDQSaFCO]Z=o5i<DbDfV3
+l59
 L34
-VWK:Gk_[izXPeco39A=];63
-!s100 TV9>Ti<EG4h`H;i;MaP6P1
+VcGZJk:LTLPLNGUCM_PN<k2
+!s100 jZdzY4IIWTM_FG?^WnLUo2
 R10
 32
-R27
-!i10b 1
-R28
-R32
 R33
+!i10b 1
+R34
+R35
+R36
 !i113 1
 R15
 R16

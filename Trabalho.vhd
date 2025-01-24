@@ -8,7 +8,8 @@ entity Trabalho is
 		  valor_PC : out std_logic_vector(3 downto 0);
 		  valor_Memoria : out std_logic_vector(15 downto 0);
 		  valor_OPCODE : out std_logic_vector(2 downto 0);
-		  valor_Y : out std_logic_vector(7 downto 0)
+		  valor_Y : out std_logic_vector(7 downto 0);
+		  valor_X : out std_logic_vector(7 downto 0)
     );
 end entity Trabalho;
 
@@ -76,7 +77,14 @@ architecture behavioral of Trabalho is
 			  resultado_out : out std_logic_vector(7 downto 0)
         );
     END COMPONENT;
-
+	
+	COMPONENT REG                         
+	   PORT(
+			clk_1Hz_in, CARREGA_in : in std_logic;
+			resultado_in : in std_logic_vector(7 downto 0);
+			REG_out : out std_logic_vector(7 downto 0)
+	   );
+	END COMPONENT;
 	
 begin
 		
@@ -128,13 +136,13 @@ begin
 			
     );
 	 
-	 ------- Instância Registrador ------
-	 --REG_ini : REG port map (
-			--clk_1Hz_in => clk_1Hz_out,
-         --CARREGA_in => sinal_CARREGA,
-			--resultado_in => sinal_resultado_out,
-			--REG_out => signal_REG_out
-    --);
+	 ----- Instância Registrador ------
+	 REG_ini : REG port map (
+			clk_1Hz_in => clk_1Hz_out,
+         	CARREGA_in => sinal_CARREGA,
+			resultado_in => sinal_resultado_out,
+			REG_out => signal_REG_out
+    );
 
 	    ----------------- Síncrono -----------------
     sincrono : process(clk_1Hz_out, reset)
@@ -155,6 +163,7 @@ begin
         --end if;
     end process;
 	 valor_Y <= signal_instrucao_in(7 downto 0);
+	 valor_X <= signal_REG_out;
 	 valor_PC <= sinal_PC;
 	 valor_Memoria <= signal_instrucao_in;
 	 valor_OPCODE <= signal_instrucao_out;

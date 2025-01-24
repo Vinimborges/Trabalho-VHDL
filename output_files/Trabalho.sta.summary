@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -3.238
+TNS   : -47.422
+
+Type  : Slow 1200mV 85C Model Setup 'CLK_div:clock_div|led_status'
+Slack : -1.321
+TNS   : -20.142
+
+Type  : Slow 1200mV 85C Model Hold 'CLK_div:clock_div|led_status'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.569
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -36.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK_div:clock_div|led_status'
+Slack : -1.000
+TNS   : -22.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -2.800
+TNS   : -37.958
+
+Type  : Slow 1200mV 0C Model Setup 'CLK_div:clock_div|led_status'
+Slack : -1.052
+TNS   : -15.803
+
+Type  : Slow 1200mV 0C Model Hold 'CLK_div:clock_div|led_status'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.511
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -36.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK_div:clock_div|led_status'
+Slack : -1.000
+TNS   : -22.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -1.407
+TNS   : -13.369
+
+Type  : Fast 1200mV 0C Model Setup 'CLK_div:clock_div|led_status'
+Slack : -0.304
+TNS   : -2.116
+
+Type  : Fast 1200mV 0C Model Hold 'CLK_div:clock_div|led_status'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.304
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -37.897
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK_div:clock_div|led_status'
+Slack : -1.000
+TNS   : -22.000
+
+------------------------------------------------------------

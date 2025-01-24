@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "OPCODE_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OPCODE_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OPCODE_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OPCODE_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OPCODE_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OPCODE_in[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

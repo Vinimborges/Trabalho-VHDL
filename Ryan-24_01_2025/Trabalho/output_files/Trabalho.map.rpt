@@ -1,0 +1,390 @@
+Analysis & Synthesis report for Trabalho
+Fri Jan 24 17:07:16 2025
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Port Connectivity Checks: "ULA:ULA_ini"
+ 11. Port Connectivity Checks: "Controle:Controle_ini"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Jan 24 17:07:16 2025       ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                      ; Trabalho                                    ;
+; Top-level Entity Name              ; Trabalho                                    ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 61                                          ;
+;     Total combinational functions  ; 61                                          ;
+;     Dedicated logic registers      ; 47                                          ;
+; Total registers                    ; 47                                          ;
+; Total pins                         ; 35                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                                      ; Trabalho           ; Trabalho           ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-12        ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                        ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                 ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------+---------+
+; Trabalho.vhd                     ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd ;         ;
+; Decoder.vhd                      ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Decoder.vhd  ;         ;
+; MEM.vhd                          ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/MEM.vhd      ;         ;
+; PC.vhd                           ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/PC.vhd       ;         ;
+; CLK_div.vhd                      ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/CLK_div.vhd  ;         ;
+; Controle.vhd                     ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Controle.vhd ;         ;
+; ULA.vhd                          ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/ULA.vhd      ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 61        ;
+;                                             ;           ;
+; Total combinational functions               ; 61        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 22        ;
+;     -- 3 input functions                    ; 6         ;
+;     -- <=2 input functions                  ; 33        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 30        ;
+;     -- arithmetic mode                      ; 31        ;
+;                                             ;           ;
+; Total registers                             ; 47        ;
+;     -- Dedicated logic registers            ; 47        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 35        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 33        ;
+; Total fan-out                               ; 336       ;
+; Average fan-out                             ; 1.89      ;
++---------------------------------------------+-----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+-------------+--------------+
+; |Trabalho                  ; 61 (1)              ; 47 (0)                    ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |Trabalho                       ; Trabalho    ; work         ;
+;    |CLK_div:clock_div|     ; 44 (44)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Trabalho|CLK_div:clock_div     ; CLK_div     ; work         ;
+;    |Controle:Controle_ini| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Trabalho|Controle:Controle_ini ; Controle    ; work         ;
+;    |MEM:MEM_ini|           ; 10 (10)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Trabalho|MEM:MEM_ini           ; MEM         ; work         ;
+;    |PC:PC_in|              ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Trabalho|PC:PC_in              ; PC          ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                 ;
++---------------------------------------+--------------------------------------------+
+; Register name                         ; Reason for Removal                         ;
++---------------------------------------+--------------------------------------------+
+; MEM:MEM_ini|instrucao_atual[11..15]   ; Stuck at GND due to stuck port data_in     ;
+; MEM:MEM_ini|instrucao_atual[7]        ; Merged with MEM:MEM_ini|instrucao_atual[5] ;
+; Total Number of Removed Registers = 6 ;                                            ;
++---------------------------------------+--------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 47    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 10    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULA_ini"                                                                                 ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; resultado_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Controle:Controle_ini"                                                                     ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; carrega_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 35                          ;
+; cycloneiii_ff         ; 47                          ;
+;     ENA               ; 10                          ;
+;     plain             ; 37                          ;
+; cycloneiii_lcell_comb ; 62                          ;
+;     arith             ; 31                          ;
+;         2 data inputs ; 31                          ;
+;     normal            ; 31                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 22                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 2.71                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Fri Jan 24 17:07:09 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Trabalho -c Trabalho
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file trabalho.vhd
+    Info (12022): Found design unit 1: Trabalho-behavioral File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 15
+    Info (12023): Found entity 1: Trabalho File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file decoder.vhd
+    Info (12022): Found design unit 1: Decoder-behavioral File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Decoder.vhd Line: 10
+    Info (12023): Found entity 1: Decoder File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Decoder.vhd Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file mem.vhd
+    Info (12022): Found design unit 1: MEM-behavioral File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/MEM.vhd Line: 14
+    Info (12023): Found entity 1: MEM File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/MEM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
+    Info (12022): Found design unit 1: PC-behavioral File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/PC.vhd Line: 14
+    Info (12023): Found entity 1: PC File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/PC.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file clk_div.vhd
+    Info (12022): Found design unit 1: CLK_div-comportamento File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/CLK_div.vhd Line: 12
+    Info (12023): Found entity 1: CLK_div File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/CLK_div.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file reg.vhd
+    Info (12022): Found design unit 1: REG-behavioral File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/REG.vhd Line: 11
+    Info (12023): Found entity 1: REG File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/REG.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file controle.vhd
+    Info (12022): Found design unit 1: Controle-comportamento File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Controle.vhd Line: 13
+    Info (12023): Found entity 1: Controle File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Controle.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
+    Info (12022): Found design unit 1: ULA-comportamento File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/ULA.vhd Line: 13
+    Info (12023): Found entity 1: ULA File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/ULA.vhd Line: 5
+Info (12127): Elaborating entity "Trabalho" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at Trabalho.vhd(7): used implicit default value for signal "controle_BCD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 7
+Warning (10541): VHDL Signal Declaration warning at Trabalho.vhd(7): used implicit default value for signal "saida_BCD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 7
+Warning (10036): Verilog HDL or VHDL warning at Trabalho.vhd(21): object "sinal_ZERA_final" assigned a value but never read File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 21
+Warning (10036): Verilog HDL or VHDL warning at Trabalho.vhd(24): object "sinal_CARREGA" assigned a value but never read File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 24
+Warning (10541): VHDL Signal Declaration warning at Trabalho.vhd(28): used implicit default value for signal "signal_REG_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 28
+Warning (10036): Verilog HDL or VHDL warning at Trabalho.vhd(29): object "sinal_resultado_out" assigned a value but never read File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at Trabalho.vhd(148): signal "sinal_ATT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 148
+Warning (10492): VHDL Process Statement warning at Trabalho.vhd(149): signal "sinal_ZERA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 149
+Warning (10492): VHDL Process Statement warning at Trabalho.vhd(150): signal "sinal_LER" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 150
+Warning (10631): VHDL Process Statement warning at Trabalho.vhd(140): inferring latch(es) for signal or variable "sinal_ATT_final", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 140
+Info (10041): Inferred latch for "sinal_ATT_final" at Trabalho.vhd(140) File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 140
+Info (12128): Elaborating entity "CLK_div" for hierarchy "CLK_div:clock_div" File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 84
+Info (12128): Elaborating entity "PC" for hierarchy "PC:PC_in" File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 90
+Warning (10492): VHDL Process Statement warning at PC.vhd(31): signal "sinal_PC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/PC.vhd Line: 31
+Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:Decoder_ini" File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 98
+Info (12128): Elaborating entity "MEM" for hierarchy "MEM:MEM_ini" File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 104
+Info (12128): Elaborating entity "Controle" for hierarchy "Controle:Controle_ini" File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 112
+Warning (10492): VHDL Process Statement warning at Controle.vhd(26): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Controle.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at Controle.vhd(29): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Controle.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at Controle.vhd(33): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Controle.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at Controle.vhd(36): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Controle.vhd Line: 36
+Warning (10492): VHDL Process Statement warning at Controle.vhd(39): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Controle.vhd Line: 39
+Warning (10492): VHDL Process Statement warning at Controle.vhd(42): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Controle.vhd Line: 42
+Warning (10492): VHDL Process Statement warning at Controle.vhd(45): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Controle.vhd Line: 45
+Warning (10492): VHDL Process Statement warning at Controle.vhd(51): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Controle.vhd Line: 51
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA_ini" File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 123
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "controle_BCD" is stuck at GND File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 7
+    Warning (13410): Pin "saida_BCD" is stuck at GND File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 7
+    Warning (13410): Pin "valor_Memoria[11]" is stuck at GND File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 9
+    Warning (13410): Pin "valor_Memoria[12]" is stuck at GND File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 9
+    Warning (13410): Pin "valor_Memoria[13]" is stuck at GND File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 9
+    Warning (13410): Pin "valor_Memoria[14]" is stuck at GND File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 9
+    Warning (13410): Pin "valor_Memoria[15]" is stuck at GND File: C:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/Trabalho.vhd Line: 9
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 96 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 61 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 28 warnings
+    Info: Peak virtual memory: 4833 megabytes
+    Info: Processing ended: Fri Jan 24 17:07:16 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:15
+
+

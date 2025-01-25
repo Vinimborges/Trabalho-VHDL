@@ -140,6 +140,42 @@
 					"strict" : false
 				},
 				{
+					"name" : "valor_ULA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_ULA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_ULA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_ULA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_ULA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_ULA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_ULA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_ULA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_CLOCK",
+					"strict" : false
+				},
+				{
 					"name" : "reset",
 					"strict" : false
 				},

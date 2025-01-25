@@ -4,10 +4,10 @@ use ieee.numeric_std.all;
 
 entity MEM is
     port (
-        clk_1Hz_in : in std_logic; -- Clock principal
-        LER_in : in std_logic; -- Clock principal
-        PC_in : in std_logic_vector(3 downto 0); -- Ponteiro para acessar a memória
-        instrucao_out: out std_logic_vector(15 downto 0)
+        clk_1Hz_in : in std_logic; 								-- Clock principal
+        LER_in : in std_logic; 									-- Flag de leitura
+        PC_in : in std_logic_vector(3 downto 0); 			-- Ponteiro para acessar a posição da memória
+        instrucao_out: out std_logic_vector(15 downto 0) -- Intrução lida da memória
     );
 end entity MEM;
 

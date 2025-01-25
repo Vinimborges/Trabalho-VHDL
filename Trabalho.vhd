@@ -9,7 +9,9 @@ entity Trabalho is
 		  valor_Memoria : out std_logic_vector(15 downto 0);
 		  valor_OPCODE : out std_logic_vector(2 downto 0);
 		  valor_Y : out std_logic_vector(7 downto 0);
-		  valor_X : out std_logic_vector(7 downto 0)
+		  valor_X : out std_logic_vector(7 downto 0);
+		  valor_ULA : out std_logic_vector(7 downto 0);
+		  valor_CLOCK : out std_logic
     );
 end entity Trabalho;
 
@@ -29,13 +31,15 @@ architecture behavioral of Trabalho is
 	 signal signal_REG_out : std_logic_vector(7 downto 0);
 	 signal sinal_resultado_out : std_logic_vector(7 downto 0);
 	 
-    COMPONENT CLK_div                          -- Declaração do componente Divisor de Clock
+	 -- Declaração do componente Divisor de Clock
+    COMPONENT CLK_div                          
         PORT(
             clock_50Mhz : in std_logic;
             clock_1hz : out std_logic
         );
     END COMPONENT;
 	 
+	 -- Declaração do componente Decoder
 	  COMPONENT Decoder                          
         PORT(
 				instrucao_in : in std_logic_vector(7 downto 0);
@@ -43,6 +47,7 @@ architecture behavioral of Trabalho is
         );
     END COMPONENT;
 	 
+	 -- Declaração do componente Program Counter
 	  COMPONENT PC                         
         PORT(
             clk_1Hz_in : in std_logic; 
@@ -52,6 +57,7 @@ architecture behavioral of Trabalho is
         );
     END COMPONENT;
 	 
+	 -- Declaração do componente Memória
 	 COMPONENT MEM                         
         PORT(
 				clk_1Hz_in : in std_logic; -- Clock principal
@@ -61,6 +67,7 @@ architecture behavioral of Trabalho is
         );
     END COMPONENT;
 	 
+	 -- Declaração do componente Controle
 	 COMPONENT Controle                         
         PORT(
 				clk_1Hz_in : in std_logic;
@@ -70,6 +77,7 @@ architecture behavioral of Trabalho is
         );
     END COMPONENT;
 	 
+	 -- Declaração do componente Unidade Lógica Aritmética
 	 COMPONENT ULA                         
         PORT(
 			  X, Y : in std_logic_vector(7 downto 0);
@@ -78,6 +86,7 @@ architecture behavioral of Trabalho is
         );
     END COMPONENT;
 	
+	-- Declaração do componente Registrador
 	COMPONENT REG                         
 	   PORT(
 			clk_1Hz_in, CARREGA_in : in std_logic;
@@ -91,28 +100,28 @@ begin
     ------- Instância do divisor de clock ------
     clock_div : CLK_div port map (
         clock_50Mhz => CLK,
-        clock_1hz => clk_1Hz_out
+        clock_1hz   => clk_1Hz_out
     );
 	 
     ------- Instância PC ------
     PC_in : PC port map (
          clk_1Hz_in => clk_1Hz_out,
 			ATT_in     => sinal_ATT_final,
-			ZERA_in    => sinal_ZERA,
+			ZERA_in    => sinal_ZERA_final,
 			PC_out     => sinal_PC
     );
 	 
 	 ------- Instância DECODER ------
     Decoder_ini : Decoder port map (
-        instrucao_in => signal_instrucao_in(15 downto 8),
+        instrucao_in  => signal_instrucao_in(15 downto 8),
         instrucao_out => signal_instrucao_out
     );
 	 
 	 ------- Instância Memoria ------
     MEM_ini : MEM port map (
-         clk_1Hz_in => clk_1Hz_out,
-			LER_in     => sinal_LER_final,
-			PC_in      => sinal_PC,
+         clk_1Hz_in    => clk_1Hz_out,
+			LER_in        => sinal_LER_final,
+			PC_in         => sinal_PC,
 			instrucao_out => signal_instrucao_in
     );
 	 
@@ -129,19 +138,19 @@ begin
 	 
 	  ------- Instância ULA ------
 	 ULA_ini : ULA port map (
-         X => signal_REG_out,
-			Y => signal_instrucao_in(7 downto 0),
-		   OPCODE => signal_instrucao_out,
+         X             => signal_REG_out,
+			Y             => signal_instrucao_in(7 downto 0),
+		   OPCODE        => signal_instrucao_out,
 		   resultado_out => sinal_resultado_out
 			
     );
 	 
 	 ----- Instância Registrador ------
 	 REG_ini : REG port map (
-			clk_1Hz_in => clk_1Hz_out,
-         	CARREGA_in => sinal_CARREGA,
+			clk_1Hz_in   => clk_1Hz_out,
+         CARREGA_in   => sinal_CARREGA,
 			resultado_in => sinal_resultado_out,
-			REG_out => signal_REG_out
+			REG_out      => signal_REG_out
     );
 
 	    ----------------- Síncrono -----------------
@@ -149,19 +158,22 @@ begin
     begin
 		  
         if reset = '1' then
-            --sinal_ATT_final <= '1'; -- Força ATT para 0 no reset
-				sinal_LER_final <= '1';
+				sinal_LER_final  <= '1';
+				sinal_ATT_final  <= '1';
 				sinal_ZERA_final <= '0';
+				
 		  else
-				sinal_ATT_final <= sinal_ATT; -- Segue o valor do Controle
+				sinal_ATT_final  <= sinal_ATT; -- Segue o valor do Controle
 				sinal_ZERA_final <= sinal_ZERA;
-				sinal_LER_final <= sinal_LER;
+				sinal_LER_final  <= sinal_LER;
 		  end if;
 				
         --elsif rising_edge(clk_1Hz_out) then 
 				
         --end if;
     end process;
+	 valor_CLOCK <= clk_1Hz_out;
+	 valor_ULA <= sinal_resultado_out;
 	 valor_Y <= signal_instrucao_in(7 downto 0);
 	 valor_X <= signal_REG_out;
 	 valor_PC <= sinal_PC;

@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Fri Jan 24 18:32:19 2025
+Analysis & Synthesis Status : Successful - Fri Jan 24 22:16:14 2025
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : Trabalho
 Top-level Entity Name : Trabalho
@@ -7,7 +7,7 @@ Total logic elements : 92
     Total combinational functions : 92
     Dedicated logic registers : 55
 Total registers : 55
-Total pins : 43
+Total pins : 52
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

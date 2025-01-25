@@ -9,7 +9,8 @@ end entity Decoder;
 
 architecture behavioral of Decoder is
 begin
-
+	
+	 -- Recebe o vetor de 8 bits e armazena apenas 3 bits
     instrucao_out <= instrucao_in(2 downto 0);
 	 
 end architecture behavioral;

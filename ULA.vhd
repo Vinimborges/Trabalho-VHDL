@@ -4,9 +4,9 @@ use ieee.numeric_std.all;
 
 entity ULA is 
     port (
-        X, Y : in std_logic_vector(7 downto 0);
-        OPCODE : in std_logic_vector(2 downto 0);
-        resultado_out : out std_logic_vector(7 downto 0)
+        X, Y : in std_logic_vector(7 downto 0);				-- Entrada X e Y
+        OPCODE : in std_logic_vector(2 downto 0);			-- Operação a ser realizada
+        resultado_out : out std_logic_vector(7 downto 0)	-- Resultado gerado pela ULA
     );
 end ULA;
 

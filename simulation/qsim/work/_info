@@ -142,27 +142,27 @@ R14
 R15
 R16
 Etrabalho
-R24
+Z28 w1737767938
 R3
 R7
 R2
-Z28 DPx6 altera 11 dffeas_pack 0 22 >EJOc2K4@P4f?njWHdOcd0
+Z29 DPx6 altera 11 dffeas_pack 0 22 >EJOc2K4@P4f?njWHdOcd0
 R4
 R5
 R6
-Z29 DPx6 altera 28 altera_primitives_components 0 22 14j`ZKHCzSI;]V?hmAE6_1
-R25
+Z30 DPx6 altera 28 altera_primitives_components 0 22 14j`ZKHCzSI;]V?hmAE6_1
+Z31 dC:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/simulation/qsim
 R8
 R9
 l0
-L80
-V:_;^OJzkORh>Vk1j7mQ>Y3
-!s100 G30@4lYBG_nieZfX0hD8V3
+L37
+Vj[I]>?4oS@APVOgmV3Hfh1
+!s100 hZYC[1OZJU]GVK8VTjEWS1
 R10
 32
-R26
+Z32 !s110 1737767938
 !i10b 1
-R27
+Z33 !s108 1737767938.000000
 R13
 R14
 !i113 1
@@ -172,62 +172,62 @@ Astructure
 R3
 R7
 R2
-R28
+R29
 R4
 R5
 R6
-R29
-DEx4 work 8 trabalho 0 22 :_;^OJzkORh>Vk1j7mQ>Y3
-l350
-L140
-V[_[B[fUaIjcS7?f>;^7D]0
-!s100 X8V=AE]kVc00kTQCLGl7c3
+R30
+DEx4 work 8 trabalho 0 22 j[I]>?4oS@APVOgmV3Hfh1
+l262
+L53
+VJf=MTUc3bF07GefN1Uk7^2
+!s100 N@e>73hI416]RzXP3A^iL2
 R10
 32
-R26
+R32
 !i10b 1
-R27
+R33
 R13
 R14
 !i113 1
 R15
 R16
 Etrabalho_vhd_vec_tst
-Z30 w1737754389
+Z34 w1737767937
 R5
 R6
-R25
-Z31 8Waveform20.vwf.vht
-Z32 FWaveform20.vwf.vht
+R31
+Z35 8Waveform10.vwf.vht
+Z36 FWaveform10.vwf.vht
 l0
 L32
 VHIDQSaFCO]Z=o5i<DbDfV3
 !s100 5NNdUFazGj5NUCIFJz[eF1
 R10
 32
-Z33 !s110 1737754393
+R32
 !i10b 1
-Z34 !s108 1737754393.000000
-Z35 !s90 -work|work|Waveform20.vwf.vht|
-Z36 !s107 Waveform20.vwf.vht|
+R33
+Z37 !s90 -work|work|Waveform10.vwf.vht|
+Z38 !s107 Waveform10.vwf.vht|
 !i113 1
 R15
 R16
 Atrabalho_arch
 R5
 R6
-Z37 DEx4 work 20 trabalho_vhd_vec_tst 0 22 HIDQSaFCO]Z=o5i<DbDfV3
-l59
+Z39 DEx4 work 20 trabalho_vhd_vec_tst 0 22 HIDQSaFCO]Z=o5i<DbDfV3
+l63
 L34
-VcGZJk:LTLPLNGUCM_PN<k2
-!s100 jZdzY4IIWTM_FG?^WnLUo2
+VmO50SmZ8IY_4l>0M8e3C;2
+!s100 0QV=HV4i7JoXbWf`4DPWg1
 R10
 32
-R33
+R32
 !i10b 1
-R34
-R35
-R36
+R33
+R37
+R38
 !i113 1
 R15
 R16

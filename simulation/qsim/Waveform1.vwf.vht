@@ -19,9 +19,9 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "01/24/2025 11:07:16"
+-- Generated on "01/24/2025 20:50:37"
                                                              
--- Vhdl Test Bench(with test vectors) for design  :          Controle
+-- Vhdl Test Bench(with test vectors) for design  :          Trabalho
 -- 
 -- Simulation tool : 3rd Party
 -- 
@@ -29,69 +29,67 @@
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;                                
 
-ENTITY Controle_vhd_vec_tst IS
-END Controle_vhd_vec_tst;
-ARCHITECTURE Controle_arch OF Controle_vhd_vec_tst IS
+ENTITY Trabalho_vhd_vec_tst IS
+END Trabalho_vhd_vec_tst;
+ARCHITECTURE Trabalho_arch OF Trabalho_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
-SIGNAL ATT_out : STD_LOGIC;
-SIGNAL CARREGA_out : STD_LOGIC;
-SIGNAL clk_1Hz_in : STD_LOGIC;
-SIGNAL LER_out : STD_LOGIC;
-SIGNAL OPCODE_in : STD_LOGIC_VECTOR(2 DOWNTO 0);
-SIGNAL OPCODE_out : STD_LOGIC_VECTOR(2 DOWNTO 0);
-SIGNAL ZERA_out : STD_LOGIC;
-COMPONENT Controle
+SIGNAL CLK : STD_LOGIC;
+SIGNAL controle_BCD : STD_LOGIC;
+SIGNAL reset : STD_LOGIC;
+SIGNAL saida_BCD : STD_LOGIC;
+SIGNAL valor_Memoria : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL valor_OPCODE : STD_LOGIC_VECTOR(2 DOWNTO 0);
+SIGNAL valor_PC : STD_LOGIC_VECTOR(3 DOWNTO 0);
+SIGNAL valor_ULA : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL valor_X : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL valor_Y : STD_LOGIC_VECTOR(7 DOWNTO 0);
+COMPONENT Trabalho
 	PORT (
-	ATT_out : BUFFER STD_LOGIC;
-	CARREGA_out : BUFFER STD_LOGIC;
-	clk_1Hz_in : IN STD_LOGIC;
-	LER_out : BUFFER STD_LOGIC;
-	OPCODE_in : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
-	OPCODE_out : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
-	ZERA_out : BUFFER STD_LOGIC
+	CLK : IN STD_LOGIC;
+	controle_BCD : OUT STD_LOGIC;
+	reset : IN STD_LOGIC;
+	saida_BCD : OUT STD_LOGIC;
+	valor_Memoria : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	valor_OPCODE : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+	valor_PC : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+	valor_ULA : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	valor_X : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	valor_Y : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
-	i1 : Controle
+	i1 : Trabalho
 	PORT MAP (
 -- list connections between master ports and signals
-	ATT_out => ATT_out,
-	CARREGA_out => CARREGA_out,
-	clk_1Hz_in => clk_1Hz_in,
-	LER_out => LER_out,
-	OPCODE_in => OPCODE_in,
-	OPCODE_out => OPCODE_out,
-	ZERA_out => ZERA_out
+	CLK => CLK,
+	controle_BCD => controle_BCD,
+	reset => reset,
+	saida_BCD => saida_BCD,
+	valor_Memoria => valor_Memoria,
+	valor_OPCODE => valor_OPCODE,
+	valor_PC => valor_PC,
+	valor_ULA => valor_ULA,
+	valor_X => valor_X,
+	valor_Y => valor_Y
 	);
 
--- clk_1Hz_in
-t_prcs_clk_1Hz_in: PROCESS
+-- CLK
+t_prcs_CLK: PROCESS
 BEGIN
 LOOP
-	clk_1Hz_in <= '0';
-	WAIT FOR 10000 ps;
-	clk_1Hz_in <= '1';
-	WAIT FOR 10000 ps;
+	CLK <= '0';
+	WAIT FOR 5000 ps;
+	CLK <= '1';
+	WAIT FOR 5000 ps;
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
-END PROCESS t_prcs_clk_1Hz_in;
--- OPCODE_in[2]
-t_prcs_OPCODE_in_2: PROCESS
+END PROCESS t_prcs_CLK;
+
+-- reset
+t_prcs_reset: PROCESS
 BEGIN
-	OPCODE_in(2) <= '0';
+	reset <= '0';
 WAIT;
-END PROCESS t_prcs_OPCODE_in_2;
--- OPCODE_in[1]
-t_prcs_OPCODE_in_1: PROCESS
-BEGIN
-	OPCODE_in(1) <= '0';
-WAIT;
-END PROCESS t_prcs_OPCODE_in_1;
--- OPCODE_in[0]
-t_prcs_OPCODE_in_0: PROCESS
-BEGIN
-	OPCODE_in(0) <= '0';
-WAIT;
-END PROCESS t_prcs_OPCODE_in_0;
-END Controle_arch;
+END PROCESS t_prcs_reset;
+END Trabalho_arch;

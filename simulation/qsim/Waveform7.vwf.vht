@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "01/24/2025 15:37:31"
+-- Generated on "01/24/2025 21:57:35"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Trabalho
 -- 
@@ -41,15 +41,21 @@ SIGNAL saida_BCD : STD_LOGIC;
 SIGNAL valor_Memoria : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL valor_OPCODE : STD_LOGIC_VECTOR(2 DOWNTO 0);
 SIGNAL valor_PC : STD_LOGIC_VECTOR(3 DOWNTO 0);
+SIGNAL valor_ULA : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL valor_X : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL valor_Y : STD_LOGIC_VECTOR(7 DOWNTO 0);
 COMPONENT Trabalho
 	PORT (
 	CLK : IN STD_LOGIC;
-	controle_BCD : OUT STD_LOGIC;
+	controle_BCD : BUFFER STD_LOGIC;
 	reset : IN STD_LOGIC;
-	saida_BCD : OUT STD_LOGIC;
-	valor_Memoria : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-	valor_OPCODE : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-	valor_PC : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+	saida_BCD : BUFFER STD_LOGIC;
+	valor_Memoria : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	valor_OPCODE : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
+	valor_PC : BUFFER STD_LOGIC_VECTOR(3 DOWNTO 0);
+	valor_ULA : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
+	valor_X : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
+	valor_Y : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
@@ -62,7 +68,10 @@ BEGIN
 	saida_BCD => saida_BCD,
 	valor_Memoria => valor_Memoria,
 	valor_OPCODE => valor_OPCODE,
-	valor_PC => valor_PC
+	valor_PC => valor_PC,
+	valor_ULA => valor_ULA,
+	valor_X => valor_X,
+	valor_Y => valor_Y
 	);
 
 -- CLK
@@ -80,6 +89,10 @@ END PROCESS t_prcs_CLK;
 -- reset
 t_prcs_reset: PROCESS
 BEGIN
+	reset <= '0';
+	WAIT FOR 780000 ps;
+	reset <= '1';
+	WAIT FOR 10000 ps;
 	reset <= '0';
 WAIT;
 END PROCESS t_prcs_reset;

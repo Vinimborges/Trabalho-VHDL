@@ -1,6 +1,7 @@
 |Trabalho
 reset => sinal_LER_final.OUTPUTSELECT
-reset => sinal_ATT_final.LATCH_ENABLE
+reset => sinal_ATT_final.OUTPUTSELECT
+reset => sinal_ZERA_final.OUTPUTSELECT
 CLK => CLK_div:clock_div.clock_50Mhz
 controle_BCD << controle_BCD.DB_MAX_OUTPUT_PORT_TYPE
 saida_BCD << comb.DB_MAX_OUTPUT_PORT_TYPE
@@ -43,6 +44,15 @@ valor_X[4] << REG:REG_ini.REG_out[4]
 valor_X[5] << REG:REG_ini.REG_out[5]
 valor_X[6] << REG:REG_ini.REG_out[6]
 valor_X[7] << REG:REG_ini.REG_out[7]
+valor_ULA[0] << ULA:ULA_ini.resultado_out[0]
+valor_ULA[1] << ULA:ULA_ini.resultado_out[1]
+valor_ULA[2] << ULA:ULA_ini.resultado_out[2]
+valor_ULA[3] << ULA:ULA_ini.resultado_out[3]
+valor_ULA[4] << ULA:ULA_ini.resultado_out[4]
+valor_ULA[5] << ULA:ULA_ini.resultado_out[5]
+valor_ULA[6] << ULA:ULA_ini.resultado_out[6]
+valor_ULA[7] << ULA:ULA_ini.resultado_out[7]
+valor_CLOCK << CLK_div:clock_div.clock_1hz
 
 
 |Trabalho|CLK_div:clock_div
@@ -231,7 +241,7 @@ OPCODE_in[2] => Equal3.IN0
 OPCODE_in[2] => Equal4.IN2
 OPCODE_in[2] => Equal5.IN1
 OPCODE_in[2] => Equal6.IN1
-ATT_out <= <VCC>
+ATT_out <= ATT_out.DB_MAX_OUTPUT_PORT_TYPE
 ZERA_out <= ZERA_out.DB_MAX_OUTPUT_PORT_TYPE
 LER_out <= LER_out.DB_MAX_OUTPUT_PORT_TYPE
 CARREGA_out <= CARREGA_out.DB_MAX_OUTPUT_PORT_TYPE

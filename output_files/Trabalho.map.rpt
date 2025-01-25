@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Trabalho
-Fri Jan 24 18:32:19 2025
+Fri Jan 24 22:17:47 2025
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jan 24 18:32:19 2025       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jan 24 22:17:47 2025       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Trabalho                                    ;
 ; Top-level Entity Name              ; Trabalho                                    ;
@@ -166,20 +166,20 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                        ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                 ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------+---------+
-; Trabalho.vhd                     ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd ;         ;
-; Decoder.vhd                      ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho/Decoder.vhd  ;         ;
-; MEM.vhd                          ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho/MEM.vhd      ;         ;
-; PC.vhd                           ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho/PC.vhd       ;         ;
-; CLK_div.vhd                      ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho/CLK_div.vhd  ;         ;
-; REG.vhd                          ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho/REG.vhd      ;         ;
-; Controle.vhd                     ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho/Controle.vhd ;         ;
-; ULA.vhd                          ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho/ULA.vhd      ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                           ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                    ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
+; Trabalho.vhd                     ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd ;         ;
+; Decoder.vhd                      ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho2.0/Decoder.vhd  ;         ;
+; MEM.vhd                          ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho2.0/MEM.vhd      ;         ;
+; PC.vhd                           ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho2.0/PC.vhd       ;         ;
+; CLK_div.vhd                      ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho2.0/CLK_div.vhd  ;         ;
+; REG.vhd                          ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho2.0/REG.vhd      ;         ;
+; Controle.vhd                     ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho2.0/Controle.vhd ;         ;
+; ULA.vhd                          ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho2.0/ULA.vhd      ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -296,7 +296,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -306,67 +306,67 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Jan 24 18:32:02 2025
+    Info: Processing started: Fri Jan 24 22:17:27 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Trabalho -c Trabalho
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file trabalho.vhd
-    Info (12022): Found design unit 1: Trabalho-behavioral File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 16
-    Info (12023): Found entity 1: Trabalho File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 4
+    Info (12022): Found design unit 1: Trabalho-behavioral File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 16
+    Info (12023): Found entity 1: Trabalho File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decoder.vhd
-    Info (12022): Found design unit 1: Decoder-behavioral File: C:/intelFPGA_lite/17.0/Trabalho/Decoder.vhd Line: 10
-    Info (12023): Found entity 1: Decoder File: C:/intelFPGA_lite/17.0/Trabalho/Decoder.vhd Line: 3
+    Info (12022): Found design unit 1: Decoder-behavioral File: C:/intelFPGA_lite/17.0/Trabalho2.0/Decoder.vhd Line: 10
+    Info (12023): Found entity 1: Decoder File: C:/intelFPGA_lite/17.0/Trabalho2.0/Decoder.vhd Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file mem.vhd
-    Info (12022): Found design unit 1: MEM-behavioral File: C:/intelFPGA_lite/17.0/Trabalho/MEM.vhd Line: 14
-    Info (12023): Found entity 1: MEM File: C:/intelFPGA_lite/17.0/Trabalho/MEM.vhd Line: 5
+    Info (12022): Found design unit 1: MEM-behavioral File: C:/intelFPGA_lite/17.0/Trabalho2.0/MEM.vhd Line: 14
+    Info (12023): Found entity 1: MEM File: C:/intelFPGA_lite/17.0/Trabalho2.0/MEM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
-    Info (12022): Found design unit 1: PC-behavioral File: C:/intelFPGA_lite/17.0/Trabalho/PC.vhd Line: 14
-    Info (12023): Found entity 1: PC File: C:/intelFPGA_lite/17.0/Trabalho/PC.vhd Line: 5
+    Info (12022): Found design unit 1: PC-behavioral File: C:/intelFPGA_lite/17.0/Trabalho2.0/PC.vhd Line: 14
+    Info (12023): Found entity 1: PC File: C:/intelFPGA_lite/17.0/Trabalho2.0/PC.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file clk_div.vhd
-    Info (12022): Found design unit 1: CLK_div-comportamento File: C:/intelFPGA_lite/17.0/Trabalho/CLK_div.vhd Line: 12
-    Info (12023): Found entity 1: CLK_div File: C:/intelFPGA_lite/17.0/Trabalho/CLK_div.vhd Line: 4
+    Info (12022): Found design unit 1: CLK_div-comportamento File: C:/intelFPGA_lite/17.0/Trabalho2.0/CLK_div.vhd Line: 12
+    Info (12023): Found entity 1: CLK_div File: C:/intelFPGA_lite/17.0/Trabalho2.0/CLK_div.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file reg.vhd
-    Info (12022): Found design unit 1: REG-behavioral File: C:/intelFPGA_lite/17.0/Trabalho/REG.vhd Line: 12
-    Info (12023): Found entity 1: REG File: C:/intelFPGA_lite/17.0/Trabalho/REG.vhd Line: 4
+    Info (12022): Found design unit 1: REG-behavioral File: C:/intelFPGA_lite/17.0/Trabalho2.0/REG.vhd Line: 12
+    Info (12023): Found entity 1: REG File: C:/intelFPGA_lite/17.0/Trabalho2.0/REG.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file controle.vhd
-    Info (12022): Found design unit 1: Controle-comportamento File: C:/intelFPGA_lite/17.0/Trabalho/Controle.vhd Line: 13
-    Info (12023): Found entity 1: Controle File: C:/intelFPGA_lite/17.0/Trabalho/Controle.vhd Line: 4
+    Info (12022): Found design unit 1: Controle-comportamento File: C:/intelFPGA_lite/17.0/Trabalho2.0/Controle.vhd Line: 13
+    Info (12023): Found entity 1: Controle File: C:/intelFPGA_lite/17.0/Trabalho2.0/Controle.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
-    Info (12022): Found design unit 1: ULA-comportamento File: C:/intelFPGA_lite/17.0/Trabalho/ULA.vhd Line: 13
-    Info (12023): Found entity 1: ULA File: C:/intelFPGA_lite/17.0/Trabalho/ULA.vhd Line: 5
+    Info (12022): Found design unit 1: ULA-comportamento File: C:/intelFPGA_lite/17.0/Trabalho2.0/ULA.vhd Line: 13
+    Info (12023): Found entity 1: ULA File: C:/intelFPGA_lite/17.0/Trabalho2.0/ULA.vhd Line: 5
 Info (12127): Elaborating entity "Trabalho" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at Trabalho.vhd(7): used implicit default value for signal "controle_BCD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 7
-Warning (10541): VHDL Signal Declaration warning at Trabalho.vhd(7): used implicit default value for signal "saida_BCD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 7
-Warning (10036): Verilog HDL or VHDL warning at Trabalho.vhd(22): object "sinal_ZERA_final" assigned a value but never read File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 22
-Warning (10492): VHDL Process Statement warning at Trabalho.vhd(156): signal "sinal_ATT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 156
-Warning (10492): VHDL Process Statement warning at Trabalho.vhd(157): signal "sinal_ZERA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 157
-Warning (10492): VHDL Process Statement warning at Trabalho.vhd(158): signal "sinal_LER" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 158
-Warning (10631): VHDL Process Statement warning at Trabalho.vhd(148): inferring latch(es) for signal or variable "sinal_ATT_final", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 148
-Info (10041): Inferred latch for "sinal_ATT_final" at Trabalho.vhd(148) File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 148
-Info (12128): Elaborating entity "CLK_div" for hierarchy "CLK_div:clock_div" File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 92
-Info (12128): Elaborating entity "PC" for hierarchy "PC:PC_in" File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 98
-Warning (10492): VHDL Process Statement warning at PC.vhd(31): signal "sinal_PC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho/PC.vhd Line: 31
-Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:Decoder_ini" File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 106
-Info (12128): Elaborating entity "MEM" for hierarchy "MEM:MEM_ini" File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 112
-Info (12128): Elaborating entity "Controle" for hierarchy "Controle:Controle_ini" File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 120
-Warning (10492): VHDL Process Statement warning at Controle.vhd(26): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho/Controle.vhd Line: 26
-Warning (10492): VHDL Process Statement warning at Controle.vhd(29): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho/Controle.vhd Line: 29
-Warning (10492): VHDL Process Statement warning at Controle.vhd(33): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho/Controle.vhd Line: 33
-Warning (10492): VHDL Process Statement warning at Controle.vhd(37): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho/Controle.vhd Line: 37
-Warning (10492): VHDL Process Statement warning at Controle.vhd(41): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho/Controle.vhd Line: 41
-Warning (10492): VHDL Process Statement warning at Controle.vhd(45): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho/Controle.vhd Line: 45
-Warning (10492): VHDL Process Statement warning at Controle.vhd(49): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho/Controle.vhd Line: 49
-Warning (10492): VHDL Process Statement warning at Controle.vhd(56): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho/Controle.vhd Line: 56
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA_ini" File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 131
-Info (12128): Elaborating entity "REG" for hierarchy "REG:REG_ini" File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 140
+Warning (10541): VHDL Signal Declaration warning at Trabalho.vhd(7): used implicit default value for signal "controle_BCD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 7
+Warning (10541): VHDL Signal Declaration warning at Trabalho.vhd(7): used implicit default value for signal "saida_BCD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 7
+Warning (10036): Verilog HDL or VHDL warning at Trabalho.vhd(22): object "sinal_ZERA_final" assigned a value but never read File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 22
+Warning (10492): VHDL Process Statement warning at Trabalho.vhd(156): signal "sinal_ATT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 156
+Warning (10492): VHDL Process Statement warning at Trabalho.vhd(157): signal "sinal_ZERA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 157
+Warning (10492): VHDL Process Statement warning at Trabalho.vhd(158): signal "sinal_LER" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 158
+Warning (10631): VHDL Process Statement warning at Trabalho.vhd(148): inferring latch(es) for signal or variable "sinal_ATT_final", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 148
+Info (10041): Inferred latch for "sinal_ATT_final" at Trabalho.vhd(148) File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 148
+Info (12128): Elaborating entity "CLK_div" for hierarchy "CLK_div:clock_div" File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 92
+Info (12128): Elaborating entity "PC" for hierarchy "PC:PC_in" File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 98
+Warning (10492): VHDL Process Statement warning at PC.vhd(31): signal "sinal_PC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho2.0/PC.vhd Line: 31
+Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:Decoder_ini" File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 106
+Info (12128): Elaborating entity "MEM" for hierarchy "MEM:MEM_ini" File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 112
+Info (12128): Elaborating entity "Controle" for hierarchy "Controle:Controle_ini" File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 120
+Warning (10492): VHDL Process Statement warning at Controle.vhd(26): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho2.0/Controle.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at Controle.vhd(29): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho2.0/Controle.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at Controle.vhd(33): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho2.0/Controle.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at Controle.vhd(37): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho2.0/Controle.vhd Line: 37
+Warning (10492): VHDL Process Statement warning at Controle.vhd(41): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho2.0/Controle.vhd Line: 41
+Warning (10492): VHDL Process Statement warning at Controle.vhd(45): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho2.0/Controle.vhd Line: 45
+Warning (10492): VHDL Process Statement warning at Controle.vhd(49): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho2.0/Controle.vhd Line: 49
+Warning (10492): VHDL Process Statement warning at Controle.vhd(56): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho2.0/Controle.vhd Line: 56
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA_ini" File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 131
+Info (12128): Elaborating entity "REG" for hierarchy "REG:REG_ini" File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 140
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "controle_BCD" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 7
-    Warning (13410): Pin "saida_BCD" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 7
-    Warning (13410): Pin "valor_Memoria[11]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 9
-    Warning (13410): Pin "valor_Memoria[12]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 9
-    Warning (13410): Pin "valor_Memoria[13]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 9
-    Warning (13410): Pin "valor_Memoria[14]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 9
-    Warning (13410): Pin "valor_Memoria[15]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 9
+    Warning (13410): Pin "controle_BCD" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 7
+    Warning (13410): Pin "saida_BCD" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 7
+    Warning (13410): Pin "valor_Memoria[11]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 9
+    Warning (13410): Pin "valor_Memoria[12]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 9
+    Warning (13410): Pin "valor_Memoria[13]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 9
+    Warning (13410): Pin "valor_Memoria[14]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 9
+    Warning (13410): Pin "valor_Memoria[15]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 9
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -375,9 +375,9 @@ Info (21057): Implemented 135 device resources after synthesis - the final resou
     Info (21059): Implemented 41 output pins
     Info (21061): Implemented 92 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 4828 megabytes
-    Info: Processing ended: Fri Jan 24 18:32:19 2025
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:39
+    Info: Peak virtual memory: 4829 megabytes
+    Info: Processing ended: Fri Jan 24 22:17:47 2025
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:44
 
 

@@ -1,5 +1,5 @@
 Fitter report for Trabalho
-Fri Jan 24 18:32:31 2025
+Fri Jan 24 22:18:00 2025
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Jan 24 18:32:31 2025       ;
+; Fitter Status                      ; Successful - Fri Jan 24 22:18:00 2025       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Trabalho                                    ;
 ; Top-level Entity Name              ; Trabalho                                    ;
@@ -203,7 +203,7 @@ agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/intelFPGA_lite/17.0/Trabalho/output_files/Trabalho.pin.
+The pin-out file can be found in C:/intelFPGA_lite/17.0/Trabalho2.0/output_files/Trabalho.pin.
 
 
 +---------------------------------------------------------------------+
@@ -1273,12 +1273,12 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node CLK~input (placed in PIN E1 (CLK1, DIFFCLK_0n)) File: C:/intelFPGA_lite/17.0/Trabalho/Trabalho.vhd Line: 6
+Info (176353): Automatically promoted node CLK~input (placed in PIN E1 (CLK1, DIFFCLK_0n)) File: C:/intelFPGA_lite/17.0/Trabalho2.0/Trabalho.vhd Line: 6
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
-Info (176353): Automatically promoted node CLK_div:clock_div|led_status  File: C:/intelFPGA_lite/17.0/Trabalho/CLK_div.vhd Line: 21
+Info (176353): Automatically promoted node CLK_div:clock_div|led_status  File: C:/intelFPGA_lite/17.0/Trabalho2.0/CLK_div.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node CLK_div:clock_div|led_status~0 File: C:/intelFPGA_lite/17.0/Trabalho/CLK_div.vhd Line: 21
+        Info (176357): Destination node CLK_div:clock_div|led_status~0 File: C:/intelFPGA_lite/17.0/Trabalho2.0/CLK_div.vhd Line: 21
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -1308,23 +1308,23 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.40 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.38 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file C:/intelFPGA_lite/17.0/Trabalho/output_files/Trabalho.fit.smsg
+Info (144001): Generated suppressed messages file C:/intelFPGA_lite/17.0/Trabalho2.0/output_files/Trabalho.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5816 megabytes
-    Info: Processing ended: Fri Jan 24 18:32:32 2025
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 5824 megabytes
+    Info: Processing ended: Fri Jan 24 22:18:00 2025
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/intelFPGA_lite/17.0/Trabalho/output_files/Trabalho.fit.smsg.
+The suppressed messages can be found in C:/intelFPGA_lite/17.0/Trabalho2.0/output_files/Trabalho.fit.smsg.
 
 

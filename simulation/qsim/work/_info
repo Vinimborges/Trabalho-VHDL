@@ -8,31 +8,203 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/intelFPGA_lite/17.0/Ryan-23_01_2025/Trabalho/simulation/qsim
-Econtrole
-Z1 w1737727637
+Ebin2bcd
+Z1 w1737838092
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 e`^h93R^CdmMEVe0e1VU_3
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z7 DPx10 cycloneive 21 cycloneive_components 0 22 Q;lLU[K?fTJPSa^YaZf>B3
+Z8 dC:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/simulation/qsim
+Z9 8Trabalho.vho
+Z10 FTrabalho.vho
+l0
+L35
+V;`3DCNXg]c3PEWD`m1THh0
+!s100 C17K1^IJmfEnAVdzD2dWN3
+Z11 OV;C;10.5b;63
+32
+Z12 !s110 1737838093
+!i10b 1
+Z13 !s108 1737838093.000000
+Z14 !s90 -work|work|Trabalho.vho|
+Z15 !s107 Trabalho.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 7 bin2bcd 0 22 ;`3DCNXg]c3PEWD`m1THh0
+l79
+L42
+VUz78zQb_lIK`]RT911jh^1
+!s100 ^?^eRSm`71dHOhMNI0T_B0
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Ebin2bcd_vhd_vec_tst
+Z18 w1737838091
+R5
+R6
+R8
+Z19 8Waveform18.vwf.vht
+Z20 FWaveform18.vwf.vht
+l0
+L32
+V>94aYDjkBJG[]GJcPK2=n1
+!s100 H1zWR:LJZOFhOCNl8XCho0
+R11
+32
+R12
+!i10b 1
+R13
+Z21 !s90 -work|work|Waveform18.vwf.vht|
+Z22 !s107 Waveform18.vwf.vht|
+!i113 1
+R16
+R17
+Abin2bcd_arch
+R5
+R6
+DEx4 work 19 bin2bcd_vhd_vec_tst 0 22 >94aYDjkBJG[]GJcPK2=n1
+l45
+L34
+V1F9[6o]Y?RMV=bNh[hmoP3
+!s100 Z73l:EIjaj[8KO8bj@_9A2
+R11
+32
+R12
+!i10b 1
+R13
+R21
+R22
+!i113 1
+R16
+R17
+Econtrolador7seg
+Z23 w1737850872
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+l0
+L35
+V_ZEcnN1YUPRQaW0>h0dG30
+!s100 oMR=lVZ5?7O_9TbgHM6DW2
+R11
+32
+Z24 !s110 1737850876
+!i10b 1
+Z25 !s108 1737850875.000000
+R14
+R15
+!i113 1
+R16
+R17
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 15 controlador7seg 0 22 _ZEcnN1YUPRQaW0>h0dG30
+l108
+L46
+V:bcNZ`J>@2>oCCY;6Wg;U2
+!s100 TeRH@`OOoV2]A<Cec]^Zm0
+R11
+32
+R24
+!i10b 1
+R25
+R14
+R15
+!i113 1
+R16
+R17
+Econtrolador7seg_vhd_vec_tst
+Z26 w1737850871
+R5
+R6
+R8
+Z27 8Waveform21.vwf.vht
+Z28 FWaveform21.vwf.vht
+l0
+L32
+V4g@OodU[Gd@=GHHUfcZ5>2
+!s100 _@cOkRhLk@K]A?ChTQ9:<1
+R11
+32
+R24
+!i10b 1
+Z29 !s108 1737850876.000000
+Z30 !s90 -work|work|Waveform21.vwf.vht|
+Z31 !s107 Waveform21.vwf.vht|
+!i113 1
+R16
+R17
+Acontrolador7seg_arch
+R5
+R6
+DEx4 work 27 controlador7seg_vhd_vec_tst 0 22 4g@OodU[Gd@=GHHUfcZ5>2
+l53
+L34
+Vh?z0_jHS8=lQTekC0C_MS3
+!s100 aAWJMkURM=InLkQhE:^VH0
+R11
+32
+R24
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R16
+R17
+Econtrole
+Z32 w1737727637
+R2
+R3
+R4
+R5
+R6
+R7
 R0
-Z8 8Trabalho.vho
-Z9 FTrabalho.vho
+R9
+R10
 l0
 L35
 VXXC>nH>W]iKFe^LeOMI@`2
 !s100 VGPh?oe2e12@Jm<imhhFY3
-Z10 OV;C;10.5b;63
+R11
 32
-Z11 !s110 1737727637
+Z33 !s110 1737727637
 !i10b 1
-Z12 !s108 1737727637.000000
-Z13 !s90 -work|work|Trabalho.vho|
-Z14 !s107 Trabalho.vho|
+Z34 !s108 1737727637.000000
+R14
+R15
 !i113 1
-Z15 o-work work
-Z16 tExplicit 1 CvgOpt 0
+R16
+R17
 Astructure
 R2
 R3
@@ -45,37 +217,37 @@ l76
 L47
 V:g9`KXn?QCnze;W<mbnIJ3
 !s100 HJGb4=@2F`2_5RM7_7`^i0
-R10
-32
 R11
+32
+R33
 !i10b 1
-R12
-R13
+R34
 R14
-!i113 1
 R15
+!i113 1
 R16
+R17
 Econtrole_vhd_vec_tst
-Z17 w1737727636
+Z35 w1737727636
 R5
 R6
 R0
-Z18 8Waveform1.vwf.vht
-Z19 FWaveform1.vwf.vht
+Z36 8Waveform1.vwf.vht
+Z37 FWaveform1.vwf.vht
 l0
 L32
 VA55cBKF:3T2Bl@4i=zI=>2
 !s100 bc[d]C2YUoFkodU3C;B580
-R10
+R11
 32
-Z20 !s110 1737727638
+Z38 !s110 1737727638
 !i10b 1
-Z21 !s108 1737727638.000000
-Z22 !s90 -work|work|Waveform1.vwf.vht|
-Z23 !s107 Waveform1.vwf.vht|
+Z39 !s108 1737727638.000000
+Z40 !s90 -work|work|Waveform1.vwf.vht|
+Z41 !s107 Waveform1.vwf.vht|
 !i113 1
-R15
 R16
+R17
 Acontrole_arch
 R5
 R6
@@ -84,41 +256,41 @@ l55
 L34
 V?NFRSNjkHL2n3hSHa=N_f0
 !s100 V:djAE2jHeW=MIUOCAYJd3
-R10
+R11
 32
-R20
+R38
 !i10b 1
-R21
-R22
-R23
+R39
+R40
+R41
 !i113 1
-R15
 R16
+R17
 Ehard_block
-Z24 w1737754391
+Z42 w1737754391
 R2
 R3
 R4
 R5
 R6
 R7
-Z25 dC:/intelFPGA_lite/17.0/Trabalho/simulation/qsim
-R8
+Z43 dC:/intelFPGA_lite/17.0/Trabalho/simulation/qsim
 R9
+R10
 l0
 L35
 VB]0;STalBkCB1_B4BXQDW2
 !s100 >mXi5[`cD`bFC`UBKA<om3
-R10
+R11
 32
-Z26 !s110 1737754392
+Z44 !s110 1737754392
 !i10b 1
-Z27 !s108 1737754392.000000
-R13
+Z45 !s108 1737754392.000000
 R14
-!i113 1
 R15
+!i113 1
 R16
+R17
 Astructure
 R2
 R3
@@ -131,103 +303,103 @@ l65
 L51
 Via>5o7W??azG@W@@eFOTF0
 !s100 [5;Wd8QGQ>@2NGoJ1I]Y43
-R10
+R11
 32
-R26
+R44
 !i10b 1
-R27
-R13
+R45
 R14
-!i113 1
 R15
+!i113 1
 R16
+R17
 Etrabalho
-Z28 w1737767938
+Z46 w1737858006
 R3
 R7
 R2
-Z29 DPx6 altera 11 dffeas_pack 0 22 >EJOc2K4@P4f?njWHdOcd0
+Z47 DPx6 altera 11 dffeas_pack 0 22 >EJOc2K4@P4f?njWHdOcd0
 R4
 R5
 R6
-Z30 DPx6 altera 28 altera_primitives_components 0 22 14j`ZKHCzSI;]V?hmAE6_1
-Z31 dC:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/simulation/qsim
+Z48 DPx6 altera 28 altera_primitives_components 0 22 14j`ZKHCzSI;]V?hmAE6_1
 R8
 R9
+R10
 l0
 L37
-Vj[I]>?4oS@APVOgmV3Hfh1
-!s100 hZYC[1OZJU]GVK8VTjEWS1
-R10
+V]a@QlRV@=ViFQbD9ZX=gG3
+!s100 _hzVK;L=8TH5:LTi[MHkT0
+R11
 32
-Z32 !s110 1737767938
+Z49 !s110 1737858007
 !i10b 1
-Z33 !s108 1737767938.000000
-R13
+Z50 !s108 1737858007.000000
 R14
-!i113 1
 R15
+!i113 1
 R16
+R17
 Astructure
 R3
 R7
 R2
-R29
+R47
 R4
 R5
 R6
-R30
-DEx4 work 8 trabalho 0 22 j[I]>?4oS@APVOgmV3Hfh1
-l262
-L53
-VJf=MTUc3bF07GefN1Uk7^2
-!s100 N@e>73hI416]RzXP3A^iL2
-R10
+R48
+DEx4 work 8 trabalho 0 22 ]a@QlRV@=ViFQbD9ZX=gG3
+l249
+L46
+V6l:I[OLh1L<hdc=Re@zU73
+!s100 kz[RBAG=Af;?n4c7hK2E;0
+R11
 32
-R32
+R49
 !i10b 1
-R33
-R13
+R50
 R14
-!i113 1
 R15
+!i113 1
 R16
+R17
 Etrabalho_vhd_vec_tst
-Z34 w1737767937
+Z51 w1737858005
 R5
 R6
-R31
-Z35 8Waveform10.vwf.vht
-Z36 FWaveform10.vwf.vht
+R8
+Z52 8Waveform24.vwf.vht
+Z53 FWaveform24.vwf.vht
 l0
 L32
 VHIDQSaFCO]Z=o5i<DbDfV3
 !s100 5NNdUFazGj5NUCIFJz[eF1
-R10
+R11
 32
-R32
+R49
 !i10b 1
-R33
-Z37 !s90 -work|work|Waveform10.vwf.vht|
-Z38 !s107 Waveform10.vwf.vht|
+R50
+Z54 !s90 -work|work|Waveform24.vwf.vht|
+Z55 !s107 Waveform24.vwf.vht|
 !i113 1
-R15
 R16
+R17
 Atrabalho_arch
 R5
 R6
-Z39 DEx4 work 20 trabalho_vhd_vec_tst 0 22 HIDQSaFCO]Z=o5i<DbDfV3
-l63
+Z56 DEx4 work 20 trabalho_vhd_vec_tst 0 22 HIDQSaFCO]Z=o5i<DbDfV3
+l49
 L34
-VmO50SmZ8IY_4l>0M8e3C;2
-!s100 0QV=HV4i7JoXbWf`4DPWg1
-R10
+VmcEi;6idSkVIV37=UznNW0
+!s100 IYP6zPd^oi^>YUz@9[U<S1
+R11
 32
-R32
+R49
 !i10b 1
-R33
-R37
-R38
+R50
+R54
+R55
 !i113 1
-R15
 R16
+R17

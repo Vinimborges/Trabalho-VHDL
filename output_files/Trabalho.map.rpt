@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Trabalho
-Fri Jan 24 22:16:14 2025
+Sat Jan 25 23:22:32 2025
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -16,9 +16,10 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   8. Registers Removed During Synthesis
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+ 11. Port Connectivity Checks: "Controlador7seg:Controlador7seg_ini"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +46,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jan 24 22:16:14 2025       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jan 25 23:22:32 2025       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Trabalho                                    ;
 ; Top-level Entity Name              ; Trabalho                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 92                                          ;
-;     Total combinational functions  ; 92                                          ;
+; Total logic elements               ; 135                                         ;
+;     Total combinational functions  ; 135                                         ;
 ;     Dedicated logic registers      ; 55                                          ;
 ; Total registers                    ; 55                                          ;
-; Total pins                         ; 52                                          ;
+; Total pins                         ; 19                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -153,33 +154,35 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-12        ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                        ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
-; Trabalho.vhd                     ; yes             ; User VHDL File  ; C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd ;         ;
-; Decoder.vhd                      ; yes             ; User VHDL File  ; C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Decoder.vhd  ;         ;
-; MEM.vhd                          ; yes             ; User VHDL File  ; C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/MEM.vhd      ;         ;
-; PC.vhd                           ; yes             ; User VHDL File  ; C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/PC.vhd       ;         ;
-; CLK_div.vhd                      ; yes             ; User VHDL File  ; C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/CLK_div.vhd  ;         ;
-; REG.vhd                          ; yes             ; User VHDL File  ; C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/REG.vhd      ;         ;
-; Controle.vhd                     ; yes             ; User VHDL File  ; C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Controle.vhd ;         ;
-; ULA.vhd                          ; yes             ; User VHDL File  ; C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/ULA.vhd      ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                              ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
+; Trabalho.vhd                     ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd        ;         ;
+; Decoder.vhd                      ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Decoder.vhd         ;         ;
+; MEM.vhd                          ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/MEM.vhd             ;         ;
+; PC.vhd                           ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/PC.vhd              ;         ;
+; CLK_div.vhd                      ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/CLK_div.vhd         ;         ;
+; REG.vhd                          ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/REG.vhd             ;         ;
+; Controle.vhd                     ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controle.vhd        ;         ;
+; ULA.vhd                          ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/ULA.vhd             ;         ;
+; Bin2BCD.vhd                      ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Bin2BCD.vhd         ;         ;
+; Controlador7seg.vhd              ; yes             ; User VHDL File  ; C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controlador7seg.vhd ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -187,30 +190,30 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 92        ;
+; Estimated Total logic elements              ; 135       ;
 ;                                             ;           ;
-; Total combinational functions               ; 92        ;
+; Total combinational functions               ; 135       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 39        ;
-;     -- 3 input functions                    ; 17        ;
-;     -- <=2 input functions                  ; 36        ;
+;     -- 4 input functions                    ; 64        ;
+;     -- 3 input functions                    ; 33        ;
+;     -- <=2 input functions                  ; 38        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 54        ;
+;     -- normal mode                          ; 97        ;
 ;     -- arithmetic mode                      ; 38        ;
 ;                                             ;           ;
 ; Total registers                             ; 55        ;
 ;     -- Dedicated logic registers            ; 55        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 52        ;
+; I/O pins                                    ; 19        ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 33        ;
-; Total fan-out                               ; 505       ;
-; Average fan-out                             ; 2.01      ;
+; Total fan-out                               ; 591       ;
+; Average fan-out                             ; 2.59      ;
 +---------------------------------------------+-----------+
 
 
@@ -219,13 +222,14 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+-------------+--------------+
-; |Trabalho                  ; 92 (1)              ; 55 (0)                    ; 0           ; 0            ; 0       ; 0         ; 52   ; 0            ; |Trabalho                       ; Trabalho    ; work         ;
-;    |CLK_div:clock_div|     ; 44 (44)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Trabalho|CLK_div:clock_div     ; CLK_div     ; work         ;
+; |Trabalho                  ; 135 (1)             ; 55 (0)                    ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |Trabalho                       ; Trabalho    ; work         ;
+;    |Bin2BCD:Bin2BCD_ini|   ; 31 (31)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Trabalho|Bin2BCD:Bin2BCD_ini   ; Bin2BCD     ; work         ;
+;    |CLK_div:clock_div|     ; 56 (56)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Trabalho|CLK_div:clock_div     ; CLK_div     ; work         ;
 ;    |Controle:Controle_ini| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Trabalho|Controle:Controle_ini ; Controle    ; work         ;
 ;    |MEM:MEM_ini|           ; 10 (10)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Trabalho|MEM:MEM_ini           ; MEM         ; work         ;
 ;    |PC:PC_in|              ; 6 (6)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Trabalho|PC:PC_in              ; PC          ; work         ;
-;    |REG:REG_ini|           ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Trabalho|REG:REG_ini           ; REG         ; work         ;
-;    |ULA:ULA_ini|           ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Trabalho|ULA:ULA_ini           ; ULA         ; work         ;
+;    |REG:REG_ini|           ; 3 (3)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Trabalho|REG:REG_ini           ; REG         ; work         ;
+;    |ULA:ULA_ini|           ; 27 (27)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Trabalho|ULA:ULA_ini           ; ULA         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -235,9 +239,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+--------------------------------------------+
 ; Register name                         ; Reason for Removal                         ;
 +---------------------------------------+--------------------------------------------+
-; MEM:MEM_ini|instrucao_atual[11..15]   ; Stuck at GND due to stuck port data_in     ;
 ; MEM:MEM_ini|instrucao_atual[7]        ; Merged with MEM:MEM_ini|instrucao_atual[5] ;
-; Total Number of Removed Registers = 6 ;                                            ;
+; Total Number of Removed Registers = 1 ;                                            ;
 +---------------------------------------+--------------------------------------------+
 
 
@@ -256,15 +259,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Trabalho|PC:PC_in|sinal_PC[1] ;
-; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; No         ; |Trabalho|ULA:ULA_ini|Mux6     ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |Trabalho|ULA:ULA_ini|Mux2     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Trabalho|PC:PC_in|sinal_PC[3]   ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; Yes        ; |Trabalho|REG:REG_ini|REG_out[3] ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |Trabalho|REG:REG_ini|REG_out[7] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Controlador7seg:Controlador7seg_ini"                                                ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; seg1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; seg2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; seg3 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; seg4 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -272,23 +287,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 52                          ;
+; boundary_port         ; 19                          ;
 ; cycloneiii_ff         ; 55                          ;
 ;     ENA               ; 22                          ;
 ;     plain             ; 33                          ;
-; cycloneiii_lcell_comb ; 93                          ;
+; cycloneiii_lcell_comb ; 139                         ;
 ;     arith             ; 38                          ;
 ;         2 data inputs ; 31                          ;
 ;         3 data inputs ; 7                           ;
-;     normal            ; 55                          ;
+;     normal            ; 101                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 10                          ;
-;         4 data inputs ; 39                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 26                          ;
+;         4 data inputs ; 64                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 2.81                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.39                        ;
 +-----------------------+-----------------------------+
 
 
@@ -297,7 +312,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -307,75 +322,94 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Jan 24 22:16:07 2025
+    Info: Processing started: Sat Jan 25 23:22:20 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Trabalho -c Trabalho
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file trabalho.vhd
-    Info (12022): Found design unit 1: Trabalho-behavioral File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 18
-    Info (12023): Found entity 1: Trabalho File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 4
+    Info (12022): Found design unit 1: Trabalho-behavioral File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 30
+    Info (12023): Found entity 1: Trabalho File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file decoder.vhd
-    Info (12022): Found design unit 1: Decoder-behavioral File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Decoder.vhd Line: 10
-    Info (12023): Found entity 1: Decoder File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Decoder.vhd Line: 3
+    Info (12022): Found design unit 1: Decoder-behavioral File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Decoder.vhd Line: 10
+    Info (12023): Found entity 1: Decoder File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Decoder.vhd Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file mem.vhd
-    Info (12022): Found design unit 1: MEM-behavioral File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/MEM.vhd Line: 14
-    Info (12023): Found entity 1: MEM File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/MEM.vhd Line: 5
+    Info (12022): Found design unit 1: MEM-behavioral File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/MEM.vhd Line: 14
+    Info (12023): Found entity 1: MEM File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/MEM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
-    Info (12022): Found design unit 1: PC-behavioral File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/PC.vhd Line: 14
-    Info (12023): Found entity 1: PC File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/PC.vhd Line: 5
+    Info (12022): Found design unit 1: PC-behavioral File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/PC.vhd Line: 14
+    Info (12023): Found entity 1: PC File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/PC.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file clk_div.vhd
-    Info (12022): Found design unit 1: CLK_div-comportamento File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/CLK_div.vhd Line: 12
-    Info (12023): Found entity 1: CLK_div File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/CLK_div.vhd Line: 4
+    Info (12022): Found design unit 1: CLK_div-comportamento File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/CLK_div.vhd Line: 12
+    Info (12023): Found entity 1: CLK_div File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/CLK_div.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file reg.vhd
-    Info (12022): Found design unit 1: REG-behavioral File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/REG.vhd Line: 12
-    Info (12023): Found entity 1: REG File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/REG.vhd Line: 4
+    Info (12022): Found design unit 1: REG-behavioral File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/REG.vhd Line: 12
+    Info (12023): Found entity 1: REG File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/REG.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file controle.vhd
-    Info (12022): Found design unit 1: Controle-comportamento File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Controle.vhd Line: 13
-    Info (12023): Found entity 1: Controle File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Controle.vhd Line: 4
+    Info (12022): Found design unit 1: Controle-comportamento File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controle.vhd Line: 13
+    Info (12023): Found entity 1: Controle File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controle.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
-    Info (12022): Found design unit 1: ULA-comportamento File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/ULA.vhd Line: 13
-    Info (12023): Found entity 1: ULA File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/ULA.vhd Line: 5
+    Info (12022): Found design unit 1: ULA-comportamento File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/ULA.vhd Line: 13
+    Info (12023): Found entity 1: ULA File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/ULA.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file bin2bcd.vhd
+    Info (12022): Found design unit 1: Bin2BCD-Comportamento File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Bin2BCD.vhd Line: 13
+    Info (12023): Found entity 1: Bin2BCD File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Bin2BCD.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file controlador7seg.vhd
+    Info (12022): Found design unit 1: Controlador7seg-Comportamento File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controlador7seg.vhd Line: 16
+    Info (12023): Found entity 1: Controlador7seg File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controlador7seg.vhd Line: 6
 Info (12127): Elaborating entity "Trabalho" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at Trabalho.vhd(7): used implicit default value for signal "controle_BCD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 7
-Warning (10541): VHDL Signal Declaration warning at Trabalho.vhd(7): used implicit default value for signal "saida_BCD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 7
-Warning (10492): VHDL Process Statement warning at Trabalho.vhd(166): signal "sinal_ATT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 166
-Warning (10492): VHDL Process Statement warning at Trabalho.vhd(167): signal "sinal_ZERA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 167
-Warning (10492): VHDL Process Statement warning at Trabalho.vhd(168): signal "sinal_LER" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 168
-Info (12128): Elaborating entity "CLK_div" for hierarchy "CLK_div:clock_div" File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 101
-Info (12128): Elaborating entity "PC" for hierarchy "PC:PC_in" File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 107
-Warning (10492): VHDL Process Statement warning at PC.vhd(39): signal "sinal_PC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/PC.vhd Line: 39
-Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:Decoder_ini" File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 115
-Info (12128): Elaborating entity "MEM" for hierarchy "MEM:MEM_ini" File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 121
-Info (12128): Elaborating entity "Controle" for hierarchy "Controle:Controle_ini" File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 129
-Warning (10492): VHDL Process Statement warning at Controle.vhd(26): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Controle.vhd Line: 26
-Warning (10492): VHDL Process Statement warning at Controle.vhd(29): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Controle.vhd Line: 29
-Warning (10492): VHDL Process Statement warning at Controle.vhd(33): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Controle.vhd Line: 33
-Warning (10492): VHDL Process Statement warning at Controle.vhd(37): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Controle.vhd Line: 37
-Warning (10492): VHDL Process Statement warning at Controle.vhd(41): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Controle.vhd Line: 41
-Warning (10492): VHDL Process Statement warning at Controle.vhd(45): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Controle.vhd Line: 45
-Warning (10492): VHDL Process Statement warning at Controle.vhd(49): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Controle.vhd Line: 49
-Warning (10492): VHDL Process Statement warning at Controle.vhd(63): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Controle.vhd Line: 63
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA_ini" File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 140
-Info (12128): Elaborating entity "REG" for hierarchy "REG:REG_ini" File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 149
+Warning (10541): VHDL Signal Declaration warning at Trabalho.vhd(13): used implicit default value for signal "controle_BCD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 13
+Warning (10036): Verilog HDL or VHDL warning at Trabalho.vhd(46): object "signal_seg1_out" assigned a value but never read File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 46
+Warning (10036): Verilog HDL or VHDL warning at Trabalho.vhd(47): object "signal_seg2_out" assigned a value but never read File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 47
+Warning (10036): Verilog HDL or VHDL warning at Trabalho.vhd(48): object "signal_seg3_out" assigned a value but never read File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 48
+Warning (10036): Verilog HDL or VHDL warning at Trabalho.vhd(49): object "signal_seg4_out" assigned a value but never read File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 49
+Warning (10492): VHDL Process Statement warning at Trabalho.vhd(219): signal "sinal_ATT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 219
+Warning (10492): VHDL Process Statement warning at Trabalho.vhd(220): signal "sinal_ZERA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 220
+Warning (10492): VHDL Process Statement warning at Trabalho.vhd(221): signal "sinal_LER" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 221
+Info (12128): Elaborating entity "CLK_div" for hierarchy "CLK_div:clock_div" File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 138
+Info (12128): Elaborating entity "PC" for hierarchy "PC:PC_in" File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 144
+Warning (10492): VHDL Process Statement warning at PC.vhd(39): signal "sinal_PC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/PC.vhd Line: 39
+Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:Decoder_ini" File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 152
+Info (12128): Elaborating entity "MEM" for hierarchy "MEM:MEM_ini" File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 158
+Info (12128): Elaborating entity "Controle" for hierarchy "Controle:Controle_ini" File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 166
+Warning (10492): VHDL Process Statement warning at Controle.vhd(26): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controle.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at Controle.vhd(29): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controle.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at Controle.vhd(33): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controle.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at Controle.vhd(37): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controle.vhd Line: 37
+Warning (10492): VHDL Process Statement warning at Controle.vhd(41): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controle.vhd Line: 41
+Warning (10492): VHDL Process Statement warning at Controle.vhd(45): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controle.vhd Line: 45
+Warning (10492): VHDL Process Statement warning at Controle.vhd(49): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controle.vhd Line: 49
+Warning (10492): VHDL Process Statement warning at Controle.vhd(63): signal "OPCODE_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controle.vhd Line: 63
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA_ini" File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 177
+Info (12128): Elaborating entity "REG" for hierarchy "REG:REG_ini" File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 186
+Info (12128): Elaborating entity "Bin2BCD" for hierarchy "Bin2BCD:Bin2BCD_ini" File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 194
+Info (12128): Elaborating entity "Controlador7seg" for hierarchy "Controlador7seg:Controlador7seg_ini" File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 200
+Warning (10492): VHDL Process Statement warning at Controlador7seg.vhd(42): signal "bcd_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controlador7seg.vhd Line: 42
+Warning (10492): VHDL Process Statement warning at Controlador7seg.vhd(43): signal "bcd_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controlador7seg.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at Controlador7seg.vhd(44): signal "bcd_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controlador7seg.vhd Line: 44
+Warning (10492): VHDL Process Statement warning at Controlador7seg.vhd(45): signal "bcd_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controlador7seg.vhd Line: 45
+Warning (10492): VHDL Process Statement warning at Controlador7seg.vhd(48): signal "digit1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controlador7seg.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at Controlador7seg.vhd(49): signal "digit2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controlador7seg.vhd Line: 49
+Warning (10492): VHDL Process Statement warning at Controlador7seg.vhd(50): signal "digit3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controlador7seg.vhd Line: 50
+Warning (10492): VHDL Process Statement warning at Controlador7seg.vhd(51): signal "digit4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Controlador7seg.vhd Line: 51
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "controle_BCD" is stuck at GND File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 7
-    Warning (13410): Pin "saida_BCD" is stuck at GND File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 7
-    Warning (13410): Pin "valor_Memoria[11]" is stuck at GND File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 9
-    Warning (13410): Pin "valor_Memoria[12]" is stuck at GND File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 9
-    Warning (13410): Pin "valor_Memoria[13]" is stuck at GND File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 9
-    Warning (13410): Pin "valor_Memoria[14]" is stuck at GND File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 9
-    Warning (13410): Pin "valor_Memoria[15]" is stuck at GND File: C:/Users/Ryan/Desktop/EComp 3/S Digitais/Trabalho-VHDL/Trabalho.vhd Line: 9
+    Warning (13410): Pin "controle_BCD" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 13
+    Warning (13410): Pin "saida_BCD[10]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 14
+    Warning (13410): Pin "saida_BCD[11]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 14
+    Warning (13410): Pin "saida_BCD[12]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 14
+    Warning (13410): Pin "saida_BCD[13]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 14
+    Warning (13410): Pin "saida_BCD[14]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 14
+    Warning (13410): Pin "saida_BCD[15]" is stuck at GND File: C:/intelFPGA_lite/17.0/Trabalho4/Trabalho-VHDL/Trabalho.vhd Line: 14
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 152 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 154 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 50 output pins
-    Info (21061): Implemented 100 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 4841 megabytes
-    Info: Processing ended: Fri Jan 24 22:16:14 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 135 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 4783 megabytes
+    Info: Processing ended: Sat Jan 25 23:22:32 2025
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:23
 
 

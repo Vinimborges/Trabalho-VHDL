@@ -1,0 +1,51 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity Bin2BCD is
+    Port ( bin_in : in STD_LOGIC_VECTOR(7 downto 0); -- Entrada binária de 8 bits
+           bcd_out : out STD_LOGIC_VECTOR(15 downto 0); -- Saída BCD de 16 bits
+			  tesr : out STD_LOGIC_VECTOR(7 downto 0);
+			  tesr2 : out STD_LOGIC_VECTOR(7 downto 0)
+    );
+end Bin2BCD;
+
+architecture Comportamento of Bin2BCD is
+    signal temp_bcd : STD_LOGIC_VECTOR(15 downto 0) := (others => '0'); -- Registrador BCD de 16 bits
+	 signal teste : STD_LOGIC_VECTOR(7 downto 0) := "10111101";
+	 signal asd : STD_LOGIC_VECTOR(7 downto 0);
+	 
+begin
+    process(teste)
+    begin
+        -- Inicializa o registrador BCD
+        temp_bcd <= (others => '0');  -- Zera a variável BCD
+
+        -- Loop para deslocar cada bit do binário
+        for i in 7 downto 0 loop
+            -- Verifica e ajusta os 4 bits mais significativos de cada bloco BCD
+            if temp_bcd(3 downto 0) >= "0101" then
+                temp_bcd(3 downto 0) <= temp_bcd(3 downto 0) + 3;
+            end if;
+            if temp_bcd(7 downto 4) >= "0101" then
+                temp_bcd(7 downto 4) <= temp_bcd(7 downto 4) + 3;
+            end if;
+            if temp_bcd(11 downto 8) >= "0101" then
+                temp_bcd(11 downto 8) <= temp_bcd(11 downto 8) + 3;
+            end if;
+            if temp_bcd(15 downto 12) >= "0101" then
+                temp_bcd(15 downto 12) <= temp_bcd(15 downto 12) + 3;
+            end if;
+
+            -- Desloca o valor BCD à esquerda e adiciona o próximo bit do binário
+            temp_bcd <= temp_bcd(14 downto 0) & teste(i); -- Deslocamento à esquerda
+				asd <= asd(6 downto 0) & teste(i);
+        end loop;
+
+        -- Atribui o valor final ao bcd_out
+        bcd_out <= temp_bcd; -- Saída final com 16 bits
+    end process;
+	 tesr <= teste;
+	 tesr2 <= asd;
+end Comportamento;

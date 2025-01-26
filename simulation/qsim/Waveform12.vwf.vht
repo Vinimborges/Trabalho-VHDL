@@ -19,9 +19,9 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "01/24/2025 16:55:06"
+-- Generated on "01/25/2025 17:28:13"
                                                              
--- Vhdl Test Bench(with test vectors) for design  :          Trabalho
+-- Vhdl Test Bench(with test vectors) for design  :          Bin2BCD
 -- 
 -- Simulation tool : 3rd Party
 -- 
@@ -29,65 +29,78 @@
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;                                
 
-ENTITY Trabalho_vhd_vec_tst IS
-END Trabalho_vhd_vec_tst;
-ARCHITECTURE Trabalho_arch OF Trabalho_vhd_vec_tst IS
+ENTITY Bin2BCD_vhd_vec_tst IS
+END Bin2BCD_vhd_vec_tst;
+ARCHITECTURE Bin2BCD_arch OF Bin2BCD_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
-SIGNAL CLK : STD_LOGIC;
-SIGNAL controle_BCD : STD_LOGIC;
-SIGNAL reset : STD_LOGIC;
-SIGNAL saida_BCD : STD_LOGIC;
-SIGNAL valor_Memoria : STD_LOGIC_VECTOR(15 DOWNTO 0);
-SIGNAL valor_OPCODE : STD_LOGIC_VECTOR(2 DOWNTO 0);
-SIGNAL valor_PC : STD_LOGIC_VECTOR(3 DOWNTO 0);
-SIGNAL valor_Y : STD_LOGIC_VECTOR(7 DOWNTO 0);
-COMPONENT Trabalho
+SIGNAL bcd_out : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL bin_in : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL tesr : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL tesr2 : STD_LOGIC_VECTOR(7 DOWNTO 0);
+COMPONENT Bin2BCD
 	PORT (
-	CLK : IN STD_LOGIC;
-	controle_BCD : OUT STD_LOGIC;
-	reset : IN STD_LOGIC;
-	saida_BCD : OUT STD_LOGIC;
-	valor_Memoria : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-	valor_OPCODE : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-	valor_PC : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-	valor_Y : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+	bcd_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	bin_in : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+	tesr : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	tesr2 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
-	i1 : Trabalho
+	i1 : Bin2BCD
 	PORT MAP (
 -- list connections between master ports and signals
-	CLK => CLK,
-	controle_BCD => controle_BCD,
-	reset => reset,
-	saida_BCD => saida_BCD,
-	valor_Memoria => valor_Memoria,
-	valor_OPCODE => valor_OPCODE,
-	valor_PC => valor_PC,
-	valor_Y => valor_Y
+	bcd_out => bcd_out,
+	bin_in => bin_in,
+	tesr => tesr,
+	tesr2 => tesr2
 	);
-
--- CLK
-t_prcs_CLK: PROCESS
+-- bin_in[7]
+t_prcs_bin_in_7: PROCESS
 BEGIN
-LOOP
-	CLK <= '0';
-	WAIT FOR 5000 ps;
-	CLK <= '1';
-	WAIT FOR 5000 ps;
-	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
-END LOOP;
-END PROCESS t_prcs_CLK;
-
--- reset
-t_prcs_reset: PROCESS
-BEGIN
-	reset <= '0';
-	WAIT FOR 860000 ps;
-	reset <= '1';
-	WAIT FOR 10000 ps;
-	reset <= '0';
+	bin_in(7) <= '0';
 WAIT;
-END PROCESS t_prcs_reset;
-END Trabalho_arch;
+END PROCESS t_prcs_bin_in_7;
+-- bin_in[6]
+t_prcs_bin_in_6: PROCESS
+BEGIN
+	bin_in(6) <= '0';
+WAIT;
+END PROCESS t_prcs_bin_in_6;
+-- bin_in[5]
+t_prcs_bin_in_5: PROCESS
+BEGIN
+	bin_in(5) <= '0';
+WAIT;
+END PROCESS t_prcs_bin_in_5;
+-- bin_in[4]
+t_prcs_bin_in_4: PROCESS
+BEGIN
+	bin_in(4) <= '0';
+WAIT;
+END PROCESS t_prcs_bin_in_4;
+-- bin_in[3]
+t_prcs_bin_in_3: PROCESS
+BEGIN
+	bin_in(3) <= '0';
+WAIT;
+END PROCESS t_prcs_bin_in_3;
+-- bin_in[2]
+t_prcs_bin_in_2: PROCESS
+BEGIN
+	bin_in(2) <= '0';
+WAIT;
+END PROCESS t_prcs_bin_in_2;
+-- bin_in[1]
+t_prcs_bin_in_1: PROCESS
+BEGIN
+	bin_in(1) <= '0';
+WAIT;
+END PROCESS t_prcs_bin_in_1;
+-- bin_in[0]
+t_prcs_bin_in_0: PROCESS
+BEGIN
+	bin_in(0) <= '0';
+WAIT;
+END PROCESS t_prcs_bin_in_0;
+END Bin2BCD_arch;

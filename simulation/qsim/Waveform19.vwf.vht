@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "01/24/2025 18:25:43"
+-- Generated on "01/25/2025 17:59:50"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Trabalho
 -- 
@@ -38,9 +38,12 @@ SIGNAL CLK : STD_LOGIC;
 SIGNAL controle_BCD : STD_LOGIC;
 SIGNAL reset : STD_LOGIC;
 SIGNAL saida_BCD : STD_LOGIC;
+SIGNAL valor_bcd : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL valor_CLOCK : STD_LOGIC;
 SIGNAL valor_Memoria : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL valor_OPCODE : STD_LOGIC_VECTOR(2 DOWNTO 0);
 SIGNAL valor_PC : STD_LOGIC_VECTOR(3 DOWNTO 0);
+SIGNAL valor_ULA : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL valor_X : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL valor_Y : STD_LOGIC_VECTOR(7 DOWNTO 0);
 COMPONENT Trabalho
@@ -49,9 +52,12 @@ COMPONENT Trabalho
 	controle_BCD : OUT STD_LOGIC;
 	reset : IN STD_LOGIC;
 	saida_BCD : OUT STD_LOGIC;
+	valor_bcd : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	valor_CLOCK : OUT STD_LOGIC;
 	valor_Memoria : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 	valor_OPCODE : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
 	valor_PC : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+	valor_ULA : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 	valor_X : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 	valor_Y : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
 	);
@@ -64,9 +70,12 @@ BEGIN
 	controle_BCD => controle_BCD,
 	reset => reset,
 	saida_BCD => saida_BCD,
+	valor_bcd => valor_bcd,
+	valor_CLOCK => valor_CLOCK,
 	valor_Memoria => valor_Memoria,
 	valor_OPCODE => valor_OPCODE,
 	valor_PC => valor_PC,
+	valor_ULA => valor_ULA,
 	valor_X => valor_X,
 	valor_Y => valor_Y
 	);
@@ -76,9 +85,9 @@ t_prcs_CLK: PROCESS
 BEGIN
 LOOP
 	CLK <= '0';
-	WAIT FOR 5000 ps;
+	WAIT FOR 10000 ps;
 	CLK <= '1';
-	WAIT FOR 5000 ps;
+	WAIT FOR 10000 ps;
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_CLK;
